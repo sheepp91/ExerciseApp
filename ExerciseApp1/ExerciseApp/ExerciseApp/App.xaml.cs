@@ -9,7 +9,7 @@ namespace ExerciseApp
         public App()
         {
             InitializeComponent();
-
+            Device.SetFlags(new[] {"Shapes_Experimental", "MediaElement_Experimental" });
             MainPage = new MainPage();
         }
 
