@@ -8,8 +8,8 @@
 
     <Grid BackgroundColor="SeaGreen">
         <MediaElement Source="ms-appx:///run.mp4" ShowsPlaybackControls="False" 
-                      IsLooping="True" Aspect="AspectFill" AutoPlay="True" 
-                      HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/> 
+                      IsLooping="True" Aspect="AspectFill" AutoPlay="True"
+                      VerticalOptions="FillAndExpand"/> 
         <BoxView Opacity="0.3" BackgroundColor="SeaGreen"/>
         <Grid HeightRequest="520" Margin="30"></Grid>
         <Path Fill="White" Aspect="Uniform" HorizontalOptions="Center"
