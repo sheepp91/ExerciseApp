@@ -1,15 +1,14 @@
 ﻿using System;
-
-using Android.App;
-using Android.Content.PM;
-using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Android.App;
+using Android.Content.PM;
 using Android.OS;
+using Android.Runtime;
 
 namespace ExerciseApp.Droid
 {
-    [Activity(Label = "ExerciseApp", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "ExerciseApp", Icon = "@drawable/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
@@ -31,3 +30,6 @@ namespace ExerciseApp.Droid
         }
     }
 }
+
+
+   

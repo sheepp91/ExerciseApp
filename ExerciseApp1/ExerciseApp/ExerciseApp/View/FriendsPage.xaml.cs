@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace ExerciseApp
+namespace ExerciseApp.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class HomePage : ContentPage
+    public partial class FriendsPage : ContentPage
     {
-        public HomePage()
+        public FriendsPage()
         {
             InitializeComponent();
         }

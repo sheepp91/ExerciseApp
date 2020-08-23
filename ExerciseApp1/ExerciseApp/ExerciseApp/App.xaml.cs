@@ -1,6 +1,5 @@
-﻿using System;
+﻿using ExerciseApp.View;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace ExerciseApp
 {
@@ -9,9 +8,9 @@ namespace ExerciseApp
         public App()
         {
             InitializeComponent();
-            Device.SetFlags(new[] {"Shapes_Experimental", "MediaElement_Experimental" });
+            Device.SetFlags(new[] { "Shapes_Experimental", "MediaElement_Experimental" });
             MainPage = new NavigationPage(new MainPage());
-            
+
         }
 
         protected override void OnStart()

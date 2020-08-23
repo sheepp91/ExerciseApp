@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using ExerciseApp.View;
+using System;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace ExerciseApp
