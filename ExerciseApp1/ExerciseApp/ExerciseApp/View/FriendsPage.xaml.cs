@@ -14,6 +14,7 @@ namespace ExerciseApp.View
     {
         public FriendsPage()
         {
+            NavigationPage.SetHasNavigationBar(this, false);
             InitializeComponent();
         }
     }

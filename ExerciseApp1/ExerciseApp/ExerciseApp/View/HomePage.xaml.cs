@@ -24,6 +24,7 @@ namespace ExerciseApp.View {
     {
         public HomePage()
         {
+            NavigationPage.SetHasNavigationBar(this, false);
             InitializeComponent();
         }
     }

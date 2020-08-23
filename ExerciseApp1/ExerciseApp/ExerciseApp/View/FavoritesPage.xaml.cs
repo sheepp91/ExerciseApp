@@ -14,6 +14,7 @@ namespace ExerciseApp.View
 	{
 		public FavoritesPage()
 		{
+			NavigationPage.SetHasNavigationBar(this, false);
 			InitializeComponent();
 		}
 	}
