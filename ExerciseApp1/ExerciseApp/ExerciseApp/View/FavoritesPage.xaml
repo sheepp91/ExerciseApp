@@ -1,11 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ExerciseApp.View.FavoritesPage">
+             x:Class="ExerciseApp.View.FavoritesPage"
+             BackgroundImageSource="background.png">
     <ContentPage.Content>
         <StackLayout>
-            <Image Source="background.png" Aspect="AspectFit" />
-            <!-- Place here the rest of the layout for the page. -->
+            <Label Text="Welcome"
+                  Padding="10"
+               FontFamily="SegoeUIEmoji#400" 
+               FontSize="25"
+               TextColor="White">
+            </Label>
+            <SearchBar Placeholder="Search for a skill" TextColor="White" PlaceholderColor="White"/>
+            <Label Text="Choose a skill" Padding="10" FontFamily="SegoeUIEmoji#400" FontSize="50" FontAttributes="None"
+               TextColor="White">
+            </Label>
+            <StackLayout>
+                <Frame OutlineColor="#FFFFFFFF" HeightRequest="125" WidthRequest="125" CornerRadius="125" HorizontalOptions="Center" VerticalOptions="Center" Margin="0" Padding="0" BackgroundColor="#D4FFED00">
+                </Frame>
+                <Image Source="heart.png"
+                        Aspect="AspectFill"
+                        Margin="-20"
+                        HeightRequest="100"
+                        WidthRequest="100" />
+                <Label Text="General Fitness" FontFamily="SegoeUIEmoji#400" FontSize="14" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+
+
+            </StackLayout>
         </StackLayout>
-        </ContentPage.Content>
-</ContentPage>
+    </ContentPage.Content>
+</ContentPage> 
