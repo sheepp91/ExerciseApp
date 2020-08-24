@@ -11,15 +11,15 @@
     x:Class="ExerciseApp.View.HomePage"
     NavigationPage.HasNavigationBar="false">
 
-    <NavigationPage Icon="ic_favorites.png">
+    <NavigationPage Icon="link.png" Title="Skill Tree">
         <x:Arguments>
-            <local:FavoritesPage/>
+            <local:SkillTreePage/>
         </x:Arguments>
     </NavigationPage>
 
-    <NavigationPage Icon="ic_nearby.png">
+    <NavigationPage Icon="list.png" Title="Tracked Skills">
         <x:Arguments>
-            <local:FriendsPage />
+            <local:TrackedSkillsPage />
         </x:Arguments>
     </NavigationPage>
 

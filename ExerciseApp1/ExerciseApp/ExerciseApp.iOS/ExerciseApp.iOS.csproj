@@ -142,4 +142,22 @@
   <ItemGroup>
     <BundleResource Include="Resources\heart.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\running.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\weightlifter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\bike.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\dumbbell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\link.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\list.png" />
+  </ItemGroup>
 </Project>

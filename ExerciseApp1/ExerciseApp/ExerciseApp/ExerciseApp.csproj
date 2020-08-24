@@ -28,19 +28,22 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="View\FavoritesPage.xaml.cs">
-      <DependentUpon>FavoritesPage.xaml</DependentUpon>
+    <Compile Update="View\TrackedSkillsPage.xaml.cs">
+      <DependentUpon>TrackedSkillsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="View\SkillTreePage.xaml.cs">
+      <DependentUpon>SkillTreePage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="View\FriendsPage.xaml">
+    <EmbeddedResource Update="View\TrackedSkillsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="View\HomePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="View\FavoritesPage.xaml">
+    <EmbeddedResource Update="View\SkillTreePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
