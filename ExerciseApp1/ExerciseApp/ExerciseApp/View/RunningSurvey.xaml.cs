@@ -10,11 +10,10 @@ using Xamarin.Forms.Xaml;
 namespace ExerciseApp.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class TrackedSkillsPage : ContentPage
+    public partial class RunningSurvey : ContentPage
     {
-        public TrackedSkillsPage()
+        public RunningSurvey()
         {
-            NavigationPage.SetHasNavigationBar(this, false);
             InitializeComponent();
         }
     }

@@ -10,12 +10,16 @@ using Xamarin.Forms.Xaml;
 namespace ExerciseApp.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class FavoritesPage : ContentPage
+	public partial class SkillTreePage : ContentPage
 	{
-		public FavoritesPage()
+		public SkillTreePage()
 		{
 			NavigationPage.SetHasNavigationBar(this, false);
 			InitializeComponent();
+		}
+		private async void OnTapped(object sender, EventArgs e)
+		{
+			await Navigation.PushAsync(new RunningDistanceSelect());
 		}
 	}
 }

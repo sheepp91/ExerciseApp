@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExerciseApp.View.RunningDistanceSelect"
+             BackgroundImageSource="background.png">
+
+
+    <StackLayout Margin="20,35,20,20">
+        <Grid Padding="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="1" Text="Distance" FontAttributes="Bold" TextColor="White"  FontFamily="SegoeUIEmoji#400" FontSize="14" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Label Grid.Column="2" Text="Level" FontAttributes="Bold" TextColor="White"  FontFamily="SegoeUIEmoji#400" FontSize="14" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Label Grid.Column="3" Text="Track" FontAttributes="Bold" TextColor="White"  FontFamily="SegoeUIEmoji#400" FontSize="14" HorizontalOptions="Center" VerticalOptions="Center"/>
+        </Grid>
+        <ListView ItemsSource="{Binding Monkeys}"
+          HasUnevenRows="true"
+          ItemSelected="OnListViewItemSelected"
+          ItemTapped="OnListViewItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="1"
+                           Text="{Binding Name}"
+                           FontAttributes="Bold"
+                           TextColor="White"  FontFamily="SegoeUIEmoji#400" FontSize="14" HorizontalOptions="Center" VerticalOptions="Center"/>
+                            <Label Grid.Column="2"
+                           Text="{Binding Level}"
+                           FontAttributes="Bold"
+                           TextColor="White"  FontFamily="SegoeUIEmoji#400" FontSize="14" HorizontalOptions="Center" VerticalOptions="Center"/>
+                            <Label Grid.Column="3"
+                           Text="{Binding Track}"
+                           FontAttributes="Bold"
+                           TextColor="White"  FontFamily="SegoeUIEmoji#400" FontSize="14" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Text="Continue" TextColor="Blue" FontAttributes="Bold" FontFamily="SegoeUIEmoji#400" FontSize="14" HorizontalOptions="Center" VerticalOptions="Center" CornerRadius="10" Clicked="OnButtonClicked"/>
+    </StackLayout>
+</ContentPage>

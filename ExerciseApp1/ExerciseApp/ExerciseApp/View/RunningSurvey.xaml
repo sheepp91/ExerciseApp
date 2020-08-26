@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExerciseApp.View.RunningSurvey"
+             BackgroundImageSource="background.png">
+    <ContentPage.Content>
+        <StackLayout Margin="0,60,0,60">
+            <Label Text="What is your 100m Record?"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                 FontAttributes="Bold" TextColor="White" FontSize="28" FontFamily="SegoeUIEmoji#400"/>
+            <Entry Placeholder="Enter Time (Seconds)" VerticalOptions="StartAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontAttributes="Bold" PlaceholderColor="White" TextColor="White" FontSize="28" FontFamily="SegoeUIEmoji#400" Keyboard="Numeric"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

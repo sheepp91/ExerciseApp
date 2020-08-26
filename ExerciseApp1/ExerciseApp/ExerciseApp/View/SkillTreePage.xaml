@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ExerciseApp.View.FavoritesPage"
+             x:Class="ExerciseApp.View.SkillTreePage"
              BackgroundImageSource="background.png">
     <ContentPage.Content>
         <StackLayout>
@@ -28,13 +28,74 @@
                 
                 </Frame>
 
-                <Label Text="General Fitness" FontAttributes="Bold"  FontFamily="SegoeUIEmoji#400" FontSize="14" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="General Fitness" Margin="-7" FontAttributes="Bold"  FontFamily="SegoeUIEmoji#400" FontSize="14" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
 
             </StackLayout>
-            <Grid >
-                
-                
+            <Grid Margin="0,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="0.5*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100*" />
+                    <RowDefinition Height="100*" />
+                </Grid.RowDefinitions>
+
+                <Frame Grid.Column="0" OutlineColor="#FFFFFFFF" HeightRequest="100" WidthRequest="100" CornerRadius="100" HorizontalOptions="Center" VerticalOptions="Center" Margin="0" Padding="0" BackgroundColor="#FFFFDD01">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnTapped"/>
+                    </Frame.GestureRecognizers>
+                    <Image Source="running.png"
+                        Aspect="AspectFill"
                  
+                        HeightRequest="75"
+                        WidthRequest="75"
+                        HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+
+                </Frame>
+
+                <Frame Grid.Column="1" OutlineColor="#FFFFFFFF" HeightRequest="100" WidthRequest="100" CornerRadius="100" HorizontalOptions="Center" VerticalOptions="Center" Margin="0" Padding="0" BackgroundColor="#FFFFA40A">
+
+                    <Image Source="dumbbell.png"
+                        Aspect="AspectFill"
+                      
+                        HeightRequest="75"
+                        WidthRequest="75"
+                        HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+
+                </Frame>
+
+                <Frame Grid.Row="1" OutlineColor="#FFFFFFFF" HeightRequest="100" WidthRequest="100" CornerRadius="100" HorizontalOptions="Center" VerticalOptions="Center" Margin="10" Padding="0" BackgroundColor="orangered">
+                 
+                    <Image Source="bike.png"
+                        Aspect="AspectFill"
+                      
+                        HeightRequest="75"
+                        WidthRequest="75"
+                        HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+
+                </Frame>
+
+                <Frame Grid.Column="1" Grid.Row="1" OutlineColor="#FFFFFFFF" HeightRequest="100" WidthRequest="100" CornerRadius="100" HorizontalOptions="Center" VerticalOptions="Center" Margin="0" Padding="0" BackgroundColor="#FFFF2A00">
+
+                    <Image Source="weightlifter.png"
+                        Aspect="AspectFill"
+                      
+                        HeightRequest="75"
+                        WidthRequest="75"
+                        HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+
+                </Frame>
+
+                <Label Margin="-8" Grid.Column="0" Text="Running" FontAttributes="Bold"  FontFamily="SegoeUIEmoji#400" FontSize="14" TextColor="White" HorizontalOptions="Center" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Margin="-8" Grid.Column="1" Text="Weightlifting" FontAttributes="Bold"  FontFamily="SegoeUIEmoji#400" FontSize="14" TextColor="White" HorizontalOptions="Center" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Margin="-8" Grid.Row="1" Text="Cycling" FontAttributes="Bold"  FontFamily="SegoeUIEmoji#400" FontSize="14" TextColor="White" HorizontalOptions="Center" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Margin="-8" Grid.Column="1" Grid.Row="1" Text="Bodybuilding" FontAttributes="Bold"  FontFamily="SegoeUIEmoji#400" FontSize="14" TextColor="White" HorizontalOptions="Center" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+
             </Grid>
         </StackLayout>
     </ContentPage.Content>
