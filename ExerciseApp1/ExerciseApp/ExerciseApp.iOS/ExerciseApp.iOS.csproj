@@ -137,27 +137,78 @@
     <BundleResource Include="Resources\run.mp4" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\background.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\heart.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\running.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\weightlifter.png" />
+    <BundleResource Include="Resources\icn_back.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\bike.png" />
+    <BundleResource Include="Resources\logoblankcut.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\dumbbell.png" />
+    <BundleResource Include="Resources\PagerDots1.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\link.png" />
+    <BundleResource Include="Resources\btn_white.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\list.png" />
+    <BundleResource Include="Resources\PagerDots2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Group1563.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Onboarding3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PagerDots3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Rectangle107.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PagerDots2_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PagerDots1_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\titlelogoblank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TopBanner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icn_inbox_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Weightlifting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\GeneralFitness.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btn_skip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\highlightedinbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\messagingtip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Onboarding6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\overlay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Cycling.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\toolbar.png" />
   </ItemGroup>
 </Project>

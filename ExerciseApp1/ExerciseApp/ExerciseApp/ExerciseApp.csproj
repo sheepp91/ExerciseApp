@@ -28,6 +28,21 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="View\Onboarding6.xaml.cs">
+      <DependentUpon>Onboarding6.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="View\SurveyGender.xaml.cs">
+      <DependentUpon>SurveyGender.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="View\SurveyDOB.xaml.cs">
+      <DependentUpon>SurveyDOB.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="View\Onboarding3.xaml.cs">
+      <DependentUpon>Onboarding3.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="View\Onboarding2.xaml.cs">
+      <DependentUpon>Onboarding2.xaml</DependentUpon>
+    </Compile>
     <Compile Update="View\TrackedSkillsPage.xaml.cs">
       <DependentUpon>TrackedSkillsPage.xaml</DependentUpon>
     </Compile>
@@ -37,6 +52,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="View\Onboarding1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="View\RunningDistanceSelect.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

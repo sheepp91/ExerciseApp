@@ -8,7 +8,7 @@ namespace ExerciseApp
         public App()
         {
             InitializeComponent();
-            Device.SetFlags(new[] { "Shapes_Experimental", "MediaElement_Experimental" });
+            Device.SetFlags(new[] { "Shapes_Experimental", "MediaElement_Experimental", "RadioButton_Experimental" });
             MainPage = new NavigationPage(new MainPage());
 
         }
