@@ -5,10 +5,12 @@
              BackgroundImageSource="background.png">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Friends Page"
-               FontSize="30"
+            <Label x:Name="title"
+                FontSize="30"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+
+            <Button Text ="Click Me" HorizontalOptions="Center" VerticalOptions="Center" Clicked="Button_OnClicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

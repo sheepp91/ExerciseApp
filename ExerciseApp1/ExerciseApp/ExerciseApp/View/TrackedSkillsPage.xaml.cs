@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -16,6 +11,11 @@ namespace ExerciseApp.View
         {
             NavigationPage.SetHasNavigationBar(this, false);
             InitializeComponent();
+            title.Text = "Friends Page";
+        }
+        private void Button_OnClicked(object sender, EventArgs e)
+        {
+            title.Text = "You have no friends";
         }
     }
 }
