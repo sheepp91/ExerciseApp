@@ -15,13 +15,13 @@
                     </Grid.RowDefinitions>
                     <Frame Grid.Column="0" BackgroundColor="#87BCBF">
                         <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="Back"/>
+                            <!--<TapGestureRecognizer Tapped="Back"/>-->
                         </Frame.GestureRecognizers>
                         <Image Source="icn_back.png" HorizontalOptions="StartAndExpand"></Image>
                     </Frame>
                     <Frame Grid.Column="1" BackgroundColor="#87BCBF">
                         <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="Skip"/>
+                            <!--<TapGestureRecognizer Tapped="Skip"/>-->
                         </Frame.GestureRecognizers>
                         <Label HorizontalOptions="EndAndExpand" Text="SKIP" Margin="0,10,0,0" FontFamily="Europa#700" FontSize="20" FontAttributes="Bold" TextColor="#FFFFFFFF" />
                     </Frame>
@@ -48,7 +48,7 @@
                 <Label HorizontalOptions="Center" Grid.Row="1" Margin="0,60,0,0" Text="Join Groups to Stay Motivated" FontFamily="Europa#700" FontSize="14" FontAttributes="Bold" TextColor="#FFFFFFFF" />
                 <Image Source="Onboarding3.png" Grid.Row="2"></Image>
                 <Image Source="PagerDots3.png" Grid.Row="3" HorizontalOptions="Center"></Image>
-                    <ImageButton Source="btn_white" Grid.Row="4" Margin="0,0,0,0" BackgroundColor="#87BCBF" Clicked="OnImageButtonClicked" IsEnabled="True"></ImageButton>
+                    <!--<ImageButton Source="btn_white" Grid.Row="4" Margin="0,0,0,0" BackgroundColor="#87BCBF" Clicked="OnImageButtonClicked" IsEnabled="True"></ImageButton>-->
                 </Grid>
             </StackLayout>
         </StackLayout>

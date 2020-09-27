@@ -15,13 +15,13 @@
                     </Grid.RowDefinitions>
                     <Frame Grid.Column="0" BackgroundColor="#B9B0A2">
                         <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="Back"/>
+                            <!--<TapGestureRecognizer Tapped="Back"/>-->
                         </Frame.GestureRecognizers>
                         <Image Source="icn_back.png" HorizontalOptions="StartAndExpand"></Image>
                     </Frame>
                     <Frame Grid.Column="1" BackgroundColor="#B9B0A2">
                         <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="Skip"/>
+                            <!--<TapGestureRecognizer Tapped="Skip"/>-->
                         </Frame.GestureRecognizers>
                         <Label HorizontalOptions="EndAndExpand" Text="SKIP" Margin="0,10,0,0" FontFamily="Europa#700" FontSize="20" FontAttributes="Bold" TextColor="#FFFFFFFF" />
                     </Frame>
