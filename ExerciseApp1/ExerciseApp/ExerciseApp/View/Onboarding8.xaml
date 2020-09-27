@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ExerciseApp.View.Onboarding6">
+             x:Class="ExerciseApp.View.Onboarding8">
     <ContentPage.Content>
-            <Grid>
+        <Grid>
             <ScrollView>
 
                 <StackLayout HorizontalOptions="Fill">
 
-                        <Image Source="titlelogoblank.png" HorizontalOptions="Center" Margin="10,30,10,10"></Image>
+                    <Image Source="titlelogoblank.png" HorizontalOptions="Center" Margin="10,30,10,10"></Image>
                     <Image Source="TopBanner.png" Aspect="AspectFit"></Image>
                     <SearchBar Placeholder="Search for a Skill"
            CancelButtonColor="Gray"
@@ -26,26 +26,19 @@
                     <Image Source="Running.png" HorizontalOptions="Center"></Image>
                     <Image Source="weightlifting.png" HorizontalOptions="Center"></Image>
                     <Image Source="cycling.png" HorizontalOptions="Center"></Image>
-            </StackLayout>   
+                </StackLayout>
             </ScrollView>
 
-                <Image Source="overlay.png" Aspect="AspectFill"></Image>
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="70"></RowDefinition>
-                        <RowDefinition Height="70"></RowDefinition>
-                    </Grid.RowDefinitions>
-                <ImageButton Grid.Row="0" Source="highlightedinbox.png" HorizontalOptions="End" Clicked="OnImageButtonClicked"></ImageButton>
-                    <Image Grid.Row="1" Source="messagingtip.png" HorizontalOptions="End"></Image>
-                </Grid>
-                <StackLayout VerticalOptions="Center" >
-                    <ImageButton Source="btn_skip.png" VerticalOptions="Center" Clicked="Skip"></ImageButton>
-                </StackLayout>
-            <StackLayout VerticalOptions="End">
-                <Image Source="toolbar.png"></Image>
-                
+            <Image Source="overlay.png" Aspect="AspectFill"></Image>
+
+            <StackLayout VerticalOptions="Center" >
+                <Image Source="btn_skip.png" VerticalOptions="Center"></Image>
             </StackLayout>
-            </Grid>
+            <StackLayout VerticalOptions="End">
+                <Image Source="starhighlighted.png"></Image>
+
+            </StackLayout>
+        </Grid>
 
     </ContentPage.Content>
 </ContentPage>

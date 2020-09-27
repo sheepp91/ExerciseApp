@@ -16,5 +16,20 @@ namespace ExerciseApp.View
         {
             InitializeComponent();
         }
+
+        private async void OnImageButtonClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SurveyDOB());
+        }
+
+        private async void Back(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Onboarding2());
+        }
+
+        private async void Skip(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SkillTreePage());
+        }
     }
 }

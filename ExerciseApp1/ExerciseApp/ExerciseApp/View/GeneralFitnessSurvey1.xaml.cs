@@ -10,20 +10,22 @@ using Xamarin.Forms.Xaml;
 namespace ExerciseApp.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Onboarding6 : ContentPage
+    public partial class GeneralFitnessSurvey1 : ContentPage
     {
-        public Onboarding6()
+        public GeneralFitnessSurvey1()
         {
             InitializeComponent();
         }
+
         private async void OnImageButtonClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Onboarding7());
+            await Navigation.PushAsync(new GeneralFitnessSurvey2());
         }
 
-        private async void Skip(object sender, EventArgs e)
+        private async void Back(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new SkillTreePage());
         }
+
     }
 }

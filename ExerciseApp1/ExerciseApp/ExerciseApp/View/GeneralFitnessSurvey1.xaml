@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ExerciseApp.View.SurveyGender">
+             x:Class="ExerciseApp.View.GeneralFitnessSurvey1">
     <ContentPage.Content>
         <StackLayout BackgroundColor="#5574F7">
             <StackLayout>
@@ -19,6 +19,7 @@
                         </Frame.GestureRecognizers>
                         <Image Source="icn_back.png" HorizontalOptions="StartAndExpand"></Image>
                     </Frame>
+
                 </Grid>
                 <Grid>
                     <Grid.RowDefinitions>
@@ -33,17 +34,21 @@
                         <RowDefinition Height="*">
                         </RowDefinition>
                     </Grid.RowDefinitions>
-                <Label Grid.Row="1" HorizontalOptions="Center" Text="A Bit About You" FontFamily="Europa#700" FontSize="30" FontAttributes="Bold" TextColor="#FFFFFFFF" />
-                <Line Grid.Row="1" Margin="0,30,0,0" X1="0" Y1="20" X2="290" Y2="20"
+                    <Label Grid.Row="1" HorizontalOptions="Center" Text="Current Skill Test" FontFamily="Europa#700" FontSize="30" FontAttributes="Bold" TextColor="#FFFFFFFF" />
+                    <Line Grid.Row="1" Margin="0,30,0,0" X1="0" Y1="20" X2="290" Y2="20"
     StrokeLineCap="Round"
       Stroke="White"
       StrokeThickness="2"
                       HorizontalOptions="Center"/>
-                <Label HorizontalOptions="Center" Grid.Row="1" Margin="0,60,0,0" Text="To Cater Skill Levels" FontFamily="Europa#700" FontSize="14" FontAttributes="Bold" TextColor="#FFFFFFFF" />
-                <Label HorizontalOptions="Center" Grid.Row="2" Text="What is Your Gender?" FontFamily="Europa#700" FontSize="24" FontAttributes="Bold" TextColor="#FFFFFFFF" />
-                    <RadioButton Margin="80,20,0,0" Grid.Row="2" HorizontalOptions="Center" Text="Male" IsChecked="true" TextColor="White"/>
-                    <RadioButton Margin="80,20,0,0" Grid.Row="2" Text="Female" TextColor="White" />
-                    <Image Source="PagerDots2_2.png" Grid.Row="3" HorizontalOptions="Center"></Image>
+                    <Label HorizontalOptions="Center" Grid.Row="1" Margin="0,60,0,0" Text="To Determine The Best Starting Point" FontFamily="Europa#700" FontSize="14" FontAttributes="Bold" TextColor="#FFFFFFFF" />
+                    <Label HorizontalOptions="Center" Grid.Row="2" FontFamily="Europa#700" FontSize="18" FontAttributes="Bold" TextColor="#FFFFFFFF">
+                        <Label.Text>
+                        For How Many Minutes
+Can You Walk Continuously?
+                    </Label.Text>
+                    </Label>
+                    <Slider Grid.Row="2" WidthRequest="300" HorizontalOptions="CenterAndExpand" VerticalOptions="End" Maximum="60" ThumbColor="White"></Slider>
+                    <Image Source="PagerDots1_2.png" Grid.Row="3" HorizontalOptions="Center"></Image>
                     <ImageButton Source="btn_white" Grid.Row="4" Margin="0,0,0,0" BackgroundColor="#5574F7" Clicked="OnImageButtonClicked" IsEnabled="True"></ImageButton>
                 </Grid>
             </StackLayout>

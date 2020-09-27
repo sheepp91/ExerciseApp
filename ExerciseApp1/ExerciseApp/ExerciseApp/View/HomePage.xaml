@@ -4,20 +4,32 @@
     xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core" 
     xmlns:local="clr-namespace:ExerciseApp.View"
     android:TabbedPage.ToolbarPlacement="Bottom"
-    BarBackgroundColor="#FFFFA40A"
-    BarTextColor="White"
-    UnselectedTabColor="#66FFFFFF"
-    SelectedTabColor="White"
+    BarBackgroundColor="White"
+    BarTextColor="Black"
+    UnselectedTabColor="#FFBCC5D3"
+    SelectedTabColor="#FF5887F9"
     x:Class="ExerciseApp.View.HomePage"
     NavigationPage.HasNavigationBar="false">
 
-    <NavigationPage Icon="link.png" Title="Skill Tree">
+    <NavigationPage Icon="home.png">
         <x:Arguments>
             <local:SkillTreePage/>
         </x:Arguments>
     </NavigationPage>
 
-    <NavigationPage Icon="list.png" Title="Tracked Skills">
+    <NavigationPage Icon="star.png">
+        <x:Arguments>
+            <local:TrackedSkillsPage />
+        </x:Arguments>
+    </NavigationPage>
+
+    <NavigationPage Icon="social.png">
+        <x:Arguments>
+            <local:SkillTreePage/>
+        </x:Arguments>
+    </NavigationPage>
+
+    <NavigationPage Icon="settings.png">
         <x:Arguments>
             <local:TrackedSkillsPage />
         </x:Arguments>
