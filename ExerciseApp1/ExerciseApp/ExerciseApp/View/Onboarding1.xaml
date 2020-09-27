@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ExerciseApp.View.Onboarding1">
+             x:Class="ExerciseApp.View.Onboarding1"
+             NavigationPage.HasNavigationBar="false">
     <ContentPage.Content>
         <StackLayout BackgroundColor="#FFD97D54">
             <StackLayout>
@@ -13,18 +14,22 @@
                     <Grid.RowDefinitions>
                         <RowDefinition Height="100" />
                     </Grid.RowDefinitions>
-                    <Frame Grid.Column="0" BackgroundColor="#FFD97D54">
+
+                    <ImageButton Source="icn_back.png" BackgroundColor="#FFD97D54" Grid.Column="0" Aspect="AspectFit" HeightRequest="10" WidthRequest="10" Margin="30,0,0,0" Clicked="Back" HorizontalOptions="StartAndExpand"></ImageButton>
+                    <Button BackgroundColor="#FFD97D54" Clicked="Skip" Text="SKIP" Grid.Column="1" HorizontalOptions="EndAndExpand" FontFamily="Europa#700" FontSize="20" FontAttributes="Bold" TextColor="#FFFFFFFF">
+                    </Button>
+                    <!--                   <Frame Grid.Column="0" BackgroundColor="#FFD97D54">
                         <Frame.GestureRecognizers>
                             <TapGestureRecognizer Tapped="Back"/>
                         </Frame.GestureRecognizers>
                         <Image Source="icn_back.png" HorizontalOptions="StartAndExpand"></Image>
-                    </Frame>
-                    <Frame Grid.Column="1" BackgroundColor="#FFD97D54">
+                    </Frame> -->
+  <!--                <Frame Grid.Column="1" BackgroundColor="#FFD97D54">
                         <Frame.GestureRecognizers>
                             <TapGestureRecognizer Tapped="Skip"/>
                         </Frame.GestureRecognizers>
                         <Label HorizontalOptions="EndAndExpand" Text="SKIP" Margin="0,10,0,0" FontFamily="Europa#700" FontSize="20" FontAttributes="Bold" TextColor="#FFFFFFFF" />
-                    </Frame>
+                    </Frame> -->
                 </Grid>
                 <Grid>
                     <Grid.RowDefinitions>

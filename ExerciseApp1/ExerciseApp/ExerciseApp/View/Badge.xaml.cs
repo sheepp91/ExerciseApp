@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace ExerciseApp.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Onboarding7 : ContentPage
+    public partial class Badge : ContentPage
     {
-        public Onboarding7()
+        public Badge()
         {
             InitializeComponent();
         }

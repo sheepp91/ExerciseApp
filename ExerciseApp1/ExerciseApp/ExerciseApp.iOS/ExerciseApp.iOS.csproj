@@ -211,4 +211,40 @@
   <ItemGroup>
     <BundleResource Include="Resources\toolbar.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\highlightedhome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\starhighlighted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\socialhighlighted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\onboarding10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\social.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\hex.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icn_share_active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btn_close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Decagon.png" />
+  </ItemGroup>
 </Project>
