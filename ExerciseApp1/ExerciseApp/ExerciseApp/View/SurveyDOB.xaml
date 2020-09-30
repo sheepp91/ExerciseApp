@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ExerciseApp.View.SurveyDOB">
+             x:Class="ExerciseApp.View.SurveyDOB"
+             NavigationPage.HasNavigationBar="false">
     <ContentPage.Content>
         <StackLayout BackgroundColor="#5574F7">
             <StackLayout>
@@ -13,12 +14,8 @@
                     <Grid.RowDefinitions>
                         <RowDefinition Height="100" />
                     </Grid.RowDefinitions>
-                    <Frame Grid.Column="0" BackgroundColor="#5574F7">
-                        <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="Back"/>
-                        </Frame.GestureRecognizers>
-                        <Image Source="icn_back.png" HorizontalOptions="StartAndExpand"></Image>
-                    </Frame>
+                    <ImageButton Source="icn_back.png" Grid.Column="0" Margin="30" HeightRequest="20" WidthRequest="20" BackgroundColor="#5574F7"
+                                Clicked="Back" HorizontalOptions="Start" VerticalOptions="Center"></ImageButton>
                 </Grid>
                 <Grid>
                     <Grid.RowDefinitions>
@@ -26,11 +23,11 @@
                         </RowDefinition>
                         <RowDefinition Height="*">
                         </RowDefinition>
-                        <RowDefinition Height="*">
+                        <RowDefinition Height="200">
                         </RowDefinition>
                         <RowDefinition Height="*">
                         </RowDefinition>
-                        <RowDefinition Height="*">
+                        <RowDefinition Height="100">
                         </RowDefinition>
                     </Grid.RowDefinitions>
                 <Label Grid.Row="1" HorizontalOptions="Center" Text="A Bit About You" FontFamily="Europa#700" FontSize="30" FontAttributes="Bold" TextColor="#FFFFFFFF" />
@@ -40,10 +37,11 @@
       StrokeThickness="2"
                       HorizontalOptions="Center"/>
                 <Label HorizontalOptions="Center" Grid.Row="1" Margin="0,60,0,0" Text="To Cater Skill Levels" FontFamily="Europa#700" FontSize="14" FontAttributes="Bold" TextColor="#FFFFFFFF" />
-                <Label HorizontalOptions="Center" Grid.Row="2" Text="What is Your Date of Birth?" FontFamily="Europa#700" FontSize="24" FontAttributes="Bold" TextColor="#FFFFFFFF" />
-                    <DatePicker Format="d" Grid.Row="2" FontFamily="Europa#700" FontSize="14" FontAttributes="Bold"  WidthRequest="300"  TextColor="Black" HorizontalOptions="CenterAndExpand" VerticalOptions="End" Background="White"></DatePicker>
+                <Label HorizontalOptions="Center" Grid.Row="2" Margin="0,30" Text="What is Your Date of Birth?" FontFamily="Europa#700" FontSize="24" FontAttributes="Bold" TextColor="#FFFFFFFF" />
+                    <DatePicker Format="d" Margin="0,60" Grid.Row="2" FontFamily="Europa#700" FontSize="14" FontAttributes="Bold"  WidthRequest="300" TextColor="Black" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Background="White"></DatePicker>
+                    <!--Need to make DatePicker functional. Sql Connection to save in database. Then formula for calculating age in years for Handicap function later. -->
                 <Image Source="PagerDots1_2.png" Grid.Row="3" HorizontalOptions="Center"></Image>
-                    <ImageButton Source="btn_white" Grid.Row="4" Margin="0,0,0,0" BackgroundColor="#5574F7" Clicked="OnImageButtonClicked" IsEnabled="True"></ImageButton>
+                    <ImageButton Source="btn_white" Grid.Row="4" Margin="0,-15,0,0" BackgroundColor="#5574F7" Clicked="OnImageButtonClicked" IsEnabled="True"></ImageButton>
                 </Grid>
             </StackLayout>
         </StackLayout>

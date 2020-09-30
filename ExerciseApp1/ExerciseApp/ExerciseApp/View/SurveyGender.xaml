@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ExerciseApp.View.SurveyGender">
+             x:Class="ExerciseApp.View.SurveyGender"
+             NavigationPage.HasNavigationBar="false">
     <ContentPage.Content>
         <StackLayout BackgroundColor="#5574F7">
             <StackLayout>
@@ -13,24 +14,20 @@
                     <Grid.RowDefinitions>
                         <RowDefinition Height="100" />
                     </Grid.RowDefinitions>
-                    <Frame Grid.Column="0" BackgroundColor="#5574F7">
-                        <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="Back"/>
-                        </Frame.GestureRecognizers>
-                        <Image Source="icn_back.png" HorizontalOptions="StartAndExpand"></Image>
-                    </Frame>
-                </Grid>
+                    <ImageButton Source="icn_back.png" Grid.Column="0" Margin="30" HeightRequest="20" WidthRequest="20" BackgroundColor="#5574F7"
+                                Clicked="Back" HorizontalOptions="Start" VerticalOptions="Center"></ImageButton>
+               </Grid>
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*">
                         </RowDefinition>
                         <RowDefinition Height="*">
                         </RowDefinition>
-                        <RowDefinition Height="*">
+                        <RowDefinition Height="200">
                         </RowDefinition>
                         <RowDefinition Height="*">
                         </RowDefinition>
-                        <RowDefinition Height="*">
+                        <RowDefinition Height="100">
                         </RowDefinition>
                     </Grid.RowDefinitions>
                 <Label Grid.Row="1" HorizontalOptions="Center" Text="A Bit About You" FontFamily="Europa#700" FontSize="30" FontAttributes="Bold" TextColor="#FFFFFFFF" />
@@ -40,11 +37,14 @@
       StrokeThickness="2"
                       HorizontalOptions="Center"/>
                 <Label HorizontalOptions="Center" Grid.Row="1" Margin="0,60,0,0" Text="To Cater Skill Levels" FontFamily="Europa#700" FontSize="14" FontAttributes="Bold" TextColor="#FFFFFFFF" />
-                <Label HorizontalOptions="Center" Grid.Row="2" Text="What is Your Gender?" FontFamily="Europa#700" FontSize="24" FontAttributes="Bold" TextColor="#FFFFFFFF" />
-                    <RadioButton Margin="80,20,0,0" Grid.Row="2" HorizontalOptions="Center" Text="Male" IsChecked="true" TextColor="White"/>
-                    <RadioButton Margin="80,20,0,0" Grid.Row="2" Text="Female" TextColor="White" />
+                    <Label HorizontalOptions="Center" Grid.Row="2" Margin="0,20" Text="What is Your Gender?" FontFamily="Europa#700" FontSize="24" FontAttributes="Bold" TextColor="#FFFFFFFF" />
+                    
+                    <!--Need to save this gender value and calculate into the targets for each level-->
+                    
+                   <!-- <RadioButton Grid.Row="2" HorizontalOptions="Center" TextColor="White" FontFamily="Europa#700" FontSize="24" FontAttributes="Bold"></RadioButton>
+                    <RadioButton Margin="0,20" Grid.Row="2" Text="Female" TextColor="White" FontFamily="Europa#700" FontSize="24" FontAttributes="Bold"></RadioButton> -->
                     <Image Source="PagerDots2_2.png" Grid.Row="3" HorizontalOptions="Center"></Image>
-                    <ImageButton Source="btn_white" Grid.Row="4" Margin="0,0,0,0" BackgroundColor="#5574F7" Clicked="OnImageButtonClicked" IsEnabled="True"></ImageButton>
+                    <ImageButton Source="btn_white" Grid.Row="4" Margin="0,-10,0,0" BackgroundColor="#5574F7" Clicked="OnImageButtonClicked" IsEnabled="True"></ImageButton>
                 </Grid>
             </StackLayout>
         </StackLayout>
