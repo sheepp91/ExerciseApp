@@ -4,30 +4,39 @@
              x:Class="ExerciseApp.View.SkillTreePage">
     <ContentPage.Content>
         <ScrollView>
-        <StackLayout>
             <Grid>
-            <Image Source="titlelogoblank.png" HorizontalOptions="Center" Margin="10,30,10,10"></Image>
-            <Image Source="icn_inbox_dark.png" HorizontalOptions="End" Margin="10,30,10,10"></Image>
-            </Grid>
-            <Image Source="TopBanner.png" Aspect="AspectFit"></Image>
-            <SearchBar Placeholder="Search for a Skill"
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>    
+            <Image Grid.Row="0" Source="titlelogoblank.png" HeightRequest="70" WidthRequest="70" HorizontalOptions="Center" Margin="10,10"></Image>
+            <Image Grid.Row="0" Source="icn_inbox_dark.png" HeightRequest="15" WidthRequest="15" HorizontalOptions="End" Margin="10,10"></Image>
+            
+            <Image Grid.Row="1" Source="TopBanner.png" Margin="0,-30" HorizontalOptions="FillAndExpand" HeightRequest="180"></Image>
+                <SearchBar Grid.Row="2"  Placeholder="Search for a Skill"
            CancelButtonColor="Gray"
            PlaceholderColor="Gray"
            TextColor="Gray"
            HorizontalTextAlignment="Start"
            FontSize="Medium"
            FontAttributes="Italic" 
-           Margin="10,-30,10,0"
            BackgroundColor="White"
            HorizontalOptions="Center"       
            />
-            <Label Text="Skill Categories" Margin="0,20,10,10" HorizontalOptions="Center" FontFamily="Europa#700" FontSize="18" FontAttributes="Bold" TextColor="#FF1B1C20" />
-            <Image Source="GeneralFitness.png" HorizontalOptions="Center"></Image>
-            <Image Source="Running.png" HorizontalOptions="Center"></Image>
-            <Image Source="weightlifting.png" HorizontalOptions="Center"></Image>
-            <Image Source="cycling.png" HorizontalOptions="Center"></Image>
-
-        </StackLayout>
+                
+                    <Label Grid.Row="4" Text="Skill Categories" HorizontalOptions="Center" FontFamily="Europa#700" FontSize="18" FontAttributes="Bold" TextColor="#FF1B1C20" />
+                    <Image Grid.Row="5" Source="GeneralFitness.png" Margin="0,20"  HorizontalOptions="Center" Aspect="AspectFill" HeightRequest="150" WidthRequest="250"></Image>
+                    <Image Grid.Row="6" Source="running.png" HorizontalOptions="Center" Aspect="AspectFill" HeightRequest="150" WidthRequest="250" ></Image>
+                    <Image Grid.Row="7" Source="weightlifting.png" HorizontalOptions="Center" Aspect="AspectFill" HeightRequest="150" WidthRequest="250"></Image>
+                    <Image Grid.Row="8" Source="cycling.png" Margin="0,0,0,10" HorizontalOptions="Center" Aspect="AspectFill" HeightRequest="150" WidthRequest="250"></Image>
+            </Grid>
         </ScrollView>
+
     </ContentPage.Content>
 </ContentPage> 

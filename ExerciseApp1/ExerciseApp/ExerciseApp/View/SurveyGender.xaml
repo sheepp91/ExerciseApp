@@ -38,7 +38,14 @@
                       HorizontalOptions="Center"/>
                 <Label HorizontalOptions="Center" Grid.Row="1" Margin="0,60,0,0" Text="To Cater Skill Levels" FontFamily="Europa#700" FontSize="14" FontAttributes="Bold" TextColor="#FFFFFFFF" />
                     <Label HorizontalOptions="Center" Grid.Row="2" Margin="0,20" Text="What is Your Gender?" FontFamily="Europa#700" FontSize="24" FontAttributes="Bold" TextColor="#FFFFFFFF" />
-                    
+                    <Picker x:Name="Gender" Title="Select your Gender" HorizontalOptions="Center" Grid.Row="2" Margin="0,40" TextColor="White">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Male</x:String>
+                                <x:String>Female</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
                     <!--Need to save this gender value and calculate into the targets for each level-->
                     
                    <!-- <RadioButton Grid.Row="2" HorizontalOptions="Center" TextColor="White" FontFamily="Europa#700" FontSize="24" FontAttributes="Bold"></RadioButton>
