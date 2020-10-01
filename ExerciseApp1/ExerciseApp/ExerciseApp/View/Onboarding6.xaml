@@ -4,7 +4,46 @@
              x:Class="ExerciseApp.View.Onboarding6"
              NavigationPage.HasNavigationBar="false">
     <ContentPage.Content>
-            <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Image Grid.Row="0" Source="titlelogoblank.png" HeightRequest="70" WidthRequest="70" HorizontalOptions="Center" Margin="10,10"></Image>
+
+            <Image Grid.Row="1" Source="TopBanner.png" Margin="0,-30" HorizontalOptions="FillAndExpand" HeightRequest="180"></Image>
+            <SearchBar Grid.Row="2"  Placeholder="Search for a Skill"
+           CancelButtonColor="Gray"
+           PlaceholderColor="Gray"
+           TextColor="Gray"
+           HorizontalTextAlignment="Start"
+           FontSize="Medium"
+           FontAttributes="Italic" 
+           BackgroundColor="White"
+           HorizontalOptions="Center"       
+           />
+
+            <Label Grid.Row="4" Text="Skill Categories" HorizontalOptions="Center" FontFamily="Europa#700" FontSize="18" FontAttributes="Bold" TextColor="#FF1B1C20" />
+            <Image Grid.Row="5" Source="GeneralFitness.png" Margin="0,20"  HorizontalOptions="Center" Aspect="AspectFill" HeightRequest="150" WidthRequest="250"></Image>
+            <Image Grid.Row="6" Source="running.png" HorizontalOptions="Center" Aspect="AspectFill" HeightRequest="150" WidthRequest="250" ></Image>
+            <Image Grid.RowSpan="7" Source="overlay.png" Aspect="AspectFill"></Image>
+            <Button Grid.Row="0" HeightRequest="25" WidthRequest="25" Opacity="0.0" Clicked="OnImageButtonClicked"></Button>
+            <Image Grid.Row="0" Source="highlightedinbox.png" HeightRequest="25" WidthRequest="25" HorizontalOptions="End" Margin="10,10"></Image>
+
+
+            <Image Grid.Row="1" VerticalOptions="Start" Margin="0,-30,5,0" Source="messagingtip.png" Aspect="AspectFill" HeightRequest="40" WidthRequest="200" HorizontalOptions="End"></Image>
+            <ImageButton Grid.Row="3" Source="btn_skip.png" HeightRequest="40" WidthRequest="40" BackgroundColor="#666666" VerticalOptions="Center" Clicked="Skip"></ImageButton>
+            <Image Grid.Row="6" VerticalOptions="End" Aspect="AspectFill" HorizontalOptions="FillAndExpand" HeightRequest="80" Source="toolbar.png"></Image>
+        </Grid>
+
+
+
+
+        <!--<Grid>
             <ScrollView>
 
                 <StackLayout HorizontalOptions="Fill">
@@ -44,9 +83,8 @@
                 </StackLayout>
             <StackLayout VerticalOptions="End">
                 <Image Source="toolbar.png"></Image>
-                
             </StackLayout>
-            </Grid>
+            </Grid>-->
 
     </ContentPage.Content>
 </ContentPage>
