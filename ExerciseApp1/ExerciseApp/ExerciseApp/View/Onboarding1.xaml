@@ -17,12 +17,10 @@
 
                     <ImageButton Source="icn_back.png" Grid.Column="0" Margin="30" HeightRequest="20" WidthRequest="20" BackgroundColor="#FFD97D54"
                                 Clicked="Back" HorizontalOptions="Start" VerticalOptions="Center"></ImageButton>
-                    <Button BackgroundColor="#FFD97D54" Clicked="Skip" Text="SKIP" Grid.Column="1" HorizontalOptions="EndAndExpand" FontFamily="Europa#700" FontSize="20" FontAttributes="Bold" TextColor="#FFFFFFFF">
-                    </Button>
                 </Grid>
                 <Grid>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="*">
+                        <RowDefinition Height="50">
                         </RowDefinition>
                         <RowDefinition Height="*">
                         </RowDefinition>

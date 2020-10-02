@@ -25,10 +25,5 @@ namespace ExerciseApp.View
         {
             await Navigation.PushAsync(new Onboarding1());
         }
-
-        private async void Skip(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new SkillTreePage());
-        }
     }
 }

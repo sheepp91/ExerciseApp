@@ -16,12 +16,11 @@
                     </Grid.RowDefinitions>
                     <ImageButton Source="icn_back.png" Grid.Column="0" Margin="30" HeightRequest="20" WidthRequest="20" BackgroundColor="#B9B0A2"
                                 Clicked="Back" HorizontalOptions="Start" VerticalOptions="Center"></ImageButton>
-                    <Button BackgroundColor="#B9B0A2" Clicked="Skip" Text="SKIP" Grid.Column="1" HorizontalOptions="EndAndExpand" FontFamily="Europa#700" FontSize="20" FontAttributes="Bold" TextColor="#FFFFFFFF">
-                    </Button>
+
                 </Grid>
                 <Grid>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="*">
+                        <RowDefinition Height="50">
                         </RowDefinition>
                         <RowDefinition Height="*">
                         </RowDefinition>
@@ -32,7 +31,7 @@
                         <RowDefinition Height="100">
                         </RowDefinition>
                     </Grid.RowDefinitions>
-                    <Label Grid.Row="1" HorizontalOptions="Center" Text="Track Your Favourite Skills" FontFamily="Europa#700" FontSize="30" FontAttributes="Bold" TextColor="#FFFFFFFF" ></Label>
+                    <Label Grid.Row="1" HorizontalOptions="Center" Text="Track Your Favourite Skills" FontFamily="Europa#700" FontSize="24" FontAttributes="Bold" TextColor="#FFFFFFFF" ></Label>
 
                     <Line Grid.Row="1" Margin="0,30,0,0" X1="0" Y1="20" X2="290" Y2="20"
     StrokeLineCap="Round"
