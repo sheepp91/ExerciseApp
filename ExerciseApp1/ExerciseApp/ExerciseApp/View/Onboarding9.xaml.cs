@@ -23,7 +23,7 @@ namespace ExerciseApp.View
 
         private async void Skip(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new SkillTreePage());
+            await Navigation.PushAsync(new HomePage());
         }
     }
 }

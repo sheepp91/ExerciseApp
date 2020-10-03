@@ -17,7 +17,19 @@ namespace ExerciseApp.View
 			NavigationPage.SetHasNavigationBar(this, false);
 			InitializeComponent();
 		}
-		private async void OnTapped(object sender, EventArgs e)
+		private async void Fitness(object sender, EventArgs e)
+		{
+			await Navigation.PushAsync(new GeneralFitnessSurvey1());
+		}
+		private async void Running(object sender, EventArgs e)
+		{
+			await Navigation.PushAsync(new RunningDistanceSelect());
+		}
+		private async void Weight(object sender, EventArgs e)
+		{
+			await Navigation.PushAsync(new RunningDistanceSelect());
+		}
+		private async void Cycling(object sender, EventArgs e)
 		{
 			await Navigation.PushAsync(new RunningDistanceSelect());
 		}

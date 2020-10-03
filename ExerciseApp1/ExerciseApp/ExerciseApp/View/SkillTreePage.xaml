@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ExerciseApp.View.SkillTreePage">
+             x:Class="ExerciseApp.View.SkillTreePage"
+             NavigationPage.HasNavigationBar="false">
     <ContentPage.Content>
         <ScrollView>
             <Grid>
@@ -31,10 +32,10 @@
            />
                 
                     <Label Grid.Row="4" Text="Skill Categories" HorizontalOptions="Center" FontFamily="Europa#700" FontSize="18" FontAttributes="Bold" TextColor="#FF1B1C20" />
-                    <Image Grid.Row="5" Source="GeneralFitness.png" Margin="0,20"  HorizontalOptions="Center" Aspect="AspectFill" HeightRequest="150" WidthRequest="250"></Image>
-                    <Image Grid.Row="6" Source="running.png" HorizontalOptions="Center" Aspect="AspectFill" HeightRequest="150" WidthRequest="250" ></Image>
-                    <Image Grid.Row="7" Source="weightlifting.png" HorizontalOptions="Center" Aspect="AspectFill" HeightRequest="150" WidthRequest="250"></Image>
-                    <Image Grid.Row="8" Source="cycling.png" Margin="0,0,0,10" HorizontalOptions="Center" Aspect="AspectFill" HeightRequest="150" WidthRequest="250"></Image>
+                    <ImageButton Clicked="Fitness" Grid.Row="5" Source="GeneralFitness.png" Margin="0,20"  HorizontalOptions="Center" Aspect="AspectFill" HeightRequest="150" WidthRequest="250"></ImageButton>
+                    <ImageButton Clicked="Running" Grid.Row="6" Source="running.png" HorizontalOptions="Center" Aspect="AspectFill" HeightRequest="150" WidthRequest="250" ></ImageButton>
+                    <ImageButton Clicked="Weight" Grid.Row="7" Source="weightlifting.png" HorizontalOptions="Center" Aspect="AspectFill" HeightRequest="150" WidthRequest="250"></ImageButton>
+                    <ImageButton Clicked="Cycling" Grid.Row="8" Source="cycling.png" Margin="0,0,0,10" HorizontalOptions="Center" Aspect="AspectFill" HeightRequest="150" WidthRequest="250"></ImageButton>
             </Grid>
         </ScrollView>
 

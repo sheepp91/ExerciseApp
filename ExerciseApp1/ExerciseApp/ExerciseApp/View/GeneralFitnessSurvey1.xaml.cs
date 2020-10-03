@@ -27,5 +27,11 @@ namespace ExerciseApp.View
             await Navigation.PushAsync(new SkillTreePage());
         }
 
+        void OnSliderValueChanged(object sender, ValueChangedEventArgs args)
+        {
+            double value = args.NewValue;
+            displayLabel.Text = String.Format("{0:0}", value);
+        }
+
     }
 }
