@@ -18,5 +18,9 @@ namespace ExerciseApp
         {
             await Navigation.PushAsync(new Onboarding1());
         }
+        private async void RegisterPage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Register());
+        }
     }
 }

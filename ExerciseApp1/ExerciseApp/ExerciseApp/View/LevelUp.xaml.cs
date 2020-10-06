@@ -10,14 +10,18 @@ using Xamarin.Forms.Xaml;
 namespace ExerciseApp.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Badge : ContentPage
+    public partial class LevelUp : ContentPage
     {
-        public Badge()
+        public LevelUp()
         {
             InitializeComponent();
-            level.Text = "Level 5";
         }
         private async void OnImageButtonClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new GeneralFitnessSkillTree());
+        }
+
+        private async void Back(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new GeneralFitnessSkillTree());
         }

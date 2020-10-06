@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ExerciseApp.View.GeneralFitnessSkillTree"
-             BackgroundImageSource="top.png">
+             BackgroundImageSource="top.png"
+             NavigationPage.HasNavigationBar="false">
     <ContentPage.Content>
             <StackLayout>
             <Grid>
@@ -20,10 +21,13 @@
                 </Grid.RowDefinitions>
 
                 <Image Source="top.png" Grid.Row="0" Grid.RowSpan="16" Aspect="AspectFill"></Image>
-                <Label Grid.Row="1" HorizontalOptions="Center" Text="General Fitness &#10;      Skill Tree" FontFamily="Europa#700" FontSize="30" FontAttributes="Bold" TextColor="White" />
-                <Image Source="Decagon.png" Grid.Row="3"  Grid.RowSpan="4"></Image>
-                <Label Text="I" FontFamily="Rockwell#400" FontSize="75" FontAttributes="None" TextColor="#8F000000" Grid.Row="3" Grid.RowSpan="4" Margin="0,30,0,0" HorizontalOptions="Center" />
+                <Label Grid.Row="1" HorizontalOptions="Center" Text="General Fitness &#10;      Skill Tree" FontFamily="Europa#700" FontSize="24" FontAttributes="Bold" TextColor="White" />
+                <Image Source="Decagon.png" Grid.Row="3" Grid.RowSpan="4"></Image>
+                <Button Clicked="Button_Clicked" Opacity="0.0" Grid.Row="3" Grid.RowSpan="4"></Button>
+                <Label Text="I" FontFamily="Times New Roman" FontSize="75" FontAttributes="None" TextColor="#8F000000" Grid.Row="3" Grid.RowSpan="4" Margin="0,15,0,0" HorizontalOptions="Center" />
                 <Image Source="Decagon.png" Grid.Row="7"  Grid.RowSpan="4"></Image>
+                <Button Clicked="Button_Clicked" Opacity="0.0" Grid.Row="7" Grid.RowSpan="4"></Button>
+                <Label Text="II" FontFamily="Times New Roman" FontSize="75" FontAttributes="None" TextColor="#8F000000" Grid.Row="3" Grid.RowSpan="4" Margin="0,15,0,0" HorizontalOptions="Center" />
             </Grid>
             </StackLayout>
     </ContentPage.Content>

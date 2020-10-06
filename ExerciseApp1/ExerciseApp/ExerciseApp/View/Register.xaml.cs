@@ -10,16 +10,15 @@ using Xamarin.Forms.Xaml;
 namespace ExerciseApp.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class GeneralFitnessSkillTree : ContentPage
+    public partial class Register : ContentPage
     {
-        public GeneralFitnessSkillTree()
+        public Register()
         {
             InitializeComponent();
         }
-
-        private async void Button_Clicked(object sender, EventArgs e)
+        private async void Back(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new GeneralFitnessSurvey2());
+            await Navigation.PushAsync(new MainPage());
         }
     }
 }
