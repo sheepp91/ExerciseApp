@@ -11,25 +11,25 @@
     x:Class="ExerciseApp.View.HomePage"
     NavigationPage.HasNavigationBar="false">
 
-    <NavigationPage Icon="home.png">
+    <NavigationPage Icon="home.png" Title="Home" BarTextColor="Gray">
         <x:Arguments>
             <local:SkillTreePage/>
         </x:Arguments>
     </NavigationPage>
 
-    <NavigationPage Icon="star.png">
+    <NavigationPage Icon="star.png" Title="Skills" BarTextColor="Gray">
         <x:Arguments>
             <local:TrackedSkillsPage />
         </x:Arguments>
     </NavigationPage>
 
-    <NavigationPage Icon="social.png">
+    <NavigationPage Icon="social.png" Title="Social" BarTextColor="Gray">
         <x:Arguments>
             <local:SkillTreePage/>
         </x:Arguments>
     </NavigationPage>
 
-    <NavigationPage Icon="settings.png">
+    <NavigationPage Icon="settings.png" Title="Settings" BarTextColor="Gray">
         <x:Arguments>
             <local:TrackedSkillsPage />
         </x:Arguments>

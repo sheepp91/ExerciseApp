@@ -8657,10 +8657,16 @@ namespace ExerciseApp.Droid
 			public const int TopBanner = 2131165362;
 			
 			// aapt resource value: 0x7F0700B3
-			public const int WeightBadge = 2131165363;
+			public const int TrackedSkill = 2131165363;
 			
 			// aapt resource value: 0x7F0700B4
-			public const int Weightlifting = 2131165364;
+			public const int TrackSkill = 2131165364;
+			
+			// aapt resource value: 0x7F0700B5
+			public const int WeightBadge = 2131165365;
+			
+			// aapt resource value: 0x7F0700B6
+			public const int Weightlifting = 2131165366;
 			
 			static Drawable()
 			{

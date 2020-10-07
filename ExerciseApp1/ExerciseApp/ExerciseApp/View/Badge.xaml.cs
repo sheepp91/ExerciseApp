@@ -21,5 +21,10 @@ namespace ExerciseApp.View
         {
             await Navigation.PushAsync(new GeneralFitnessSkillTree());
         }
-    }
+        private async void Share(object sender, EventArgs e)
+        {
+            bool answer = await DisplayAlert("Share your Result?", "", "Yes", "No");
+            Console.WriteLine("Answer: " + answer);
+        }
+    }  
 }

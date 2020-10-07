@@ -247,4 +247,10 @@
   <ItemGroup>
     <BundleResource Include="Resources\Decagon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Register.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TrackedSkill.png" />
+  </ItemGroup>
 </Project>
