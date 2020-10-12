@@ -23,7 +23,7 @@
                 <!--<Image Source="top.png" Grid.Row="0" Grid.RowSpan="16" Aspect="AspectFill"></Image>-->
                 <Label Grid.Row="1" HorizontalOptions="Center" Text="General Fitness &#10;      Skill Tree" FontFamily="Europa#700" FontSize="24" FontAttributes="Bold" TextColor="White" />
 
-                <ListView x:Name="ToTrackSkill" Grid.Row="1" HorizontalOptions="End">
+               <!-- <ListView x:Name="ToTrackSkill" Grid.Row="1" HorizontalOptions="End">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
@@ -44,23 +44,23 @@
                             </ViewCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>
-                </ListView>
+                </ListView> -->
 
 
-               <!-- <Image x:Name="TrackSkill" Grid.Row="1" HorizontalOptions="End" Source="TrackSkill.png" IsEnabled="False">
-                    <Image.GestureRecognizers>
+                <Image x:Name="TrackSkill" Grid.Row="1" HorizontalOptions="End" Margin="0,0,30,0" Source="TrackSkill.png" IsEnabled="False">
+                   <!-- <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
-                    </Image.GestureRecognizers>
-                </Image> -->
-                
-                
-                
+                    </Image.GestureRecognizers> -->
+                </Image>
+
+
                 <Image Source="Decagon.png" Grid.Row="3" Grid.RowSpan="4"></Image>
-                <Button Clicked="Button_Clicked" Opacity="0.0" Grid.Row="3" Grid.RowSpan="4"></Button>
                 <Label Text="I" FontFamily="Times New Roman" FontSize="75" FontAttributes="None" TextColor="#8F000000" Grid.Row="3" Grid.RowSpan="4" Margin="0,15,0,0" HorizontalOptions="Center" />
+                <Button Clicked="Button_Clicked" Opacity="0.0" Grid.Row="3" Grid.RowSpan="4"></Button>
                 <Image Source="Decagon.png" Grid.Row="7"  Grid.RowSpan="4"></Image>
-                <Button Clicked="Button_Clicked" Opacity="0.0" Grid.Row="7" Grid.RowSpan="4"></Button>
                 <Label Text="II" FontFamily="Times New Roman" FontSize="75" FontAttributes="None" TextColor="#8F000000" Grid.Row="3" Grid.RowSpan="4" Margin="0,15,0,0" HorizontalOptions="Center" />
+                <Button Clicked="Button_Clicked" Opacity="0.0" Grid.Row="7" Grid.RowSpan="4"></Button>
+
             </Grid>
             </StackLayout>
     </ContentPage.Content>

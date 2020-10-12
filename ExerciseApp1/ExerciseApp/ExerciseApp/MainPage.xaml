@@ -61,6 +61,8 @@
                     <Button Clicked="RegisterPage" Text="New Account" TextColor="Black" FontAttributes="Bold" FontSize="12" Opacity="1.0" HeightRequest="36" WidthRequest="150" CornerRadius="18" HorizontalOptions="End" BackgroundColor="AliceBlue"></Button>
 
                 </Grid>
+                <Button Text="Skip" Clicked="Skip" HorizontalOptions="End" VerticalOptions="End"></Button>
+
             </StackLayout>
         </Grid>
     </Grid>

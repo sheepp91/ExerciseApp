@@ -19,21 +19,21 @@ namespace ExerciseApp.View
 
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new GeneralFitnessSurvey2());
+            await Navigation.PushAsync(new LevelUp());
         }
 
-        public void TrackSkill(Object sender, EventArgs e)
-        {
-            Image image = sender as Image;
-            string source = image.Source as FileImageSource;  //Getting the name of source as string
-            if (String.Equals(source, "TrackSkill.png"))
-            {
-                image.Source = "TrackedSkill.png";
-            }
-            else
-            {
-                image.Source = "TrackSkill.png";
-            }
-        }
+        //public void TrackSkill(Object sender, EventArgs e)
+       // {
+         //   Image image = sender as Image;
+           // string source = image.Source as FileImageSource;  //Getting the name of source as string
+            //if (String.Equals(source, "TrackSkill.png"))
+            //{
+              //  image.Source = "TrackedSkill.png";
+            //}
+            //else
+            //{
+             //   image.Source = "TrackSkill.png";
+            //}
+        //}
     }
 }

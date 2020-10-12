@@ -22,5 +22,9 @@ namespace ExerciseApp
         {
             await Navigation.PushAsync(new Register());
         }
+        private async void Skip(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new HomePage());
+        }
     }
 }
