@@ -721,5 +721,8 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-mdpi\TrackedSkill.png" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-mdpi\IconIV.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

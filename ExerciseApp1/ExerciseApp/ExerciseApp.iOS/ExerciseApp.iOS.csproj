@@ -253,4 +253,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\TrackedSkill.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\IconIV.png" />
+  </ItemGroup>
 </Project>

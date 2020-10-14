@@ -15,7 +15,7 @@ namespace ExerciseApp.View
             Monkeys.Add(new DistanceSelect
             {
                 Name = "100m",
-                Level= "1",
+                Level= " Level 1",
  
             });
 
@@ -82,6 +82,11 @@ namespace ExerciseApp.View
         async void OnButtonClicked(object sender, System.EventArgs e)
         {
             await Navigation.PushAsync(new RunningSurvey());
+        }
+
+        private async void Back(object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new SkillTreePage());
         }
     }
 }

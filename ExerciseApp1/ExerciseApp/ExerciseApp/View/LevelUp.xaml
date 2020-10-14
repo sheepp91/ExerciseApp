@@ -15,7 +15,7 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="100" />
                 </Grid.RowDefinitions>
-                <Image Source="icn_back.png" Grid.Column="0" Margin="30" HeightRequest="20" WidthRequest="20" BackgroundColor="#5574F7"
+                <Image Source="icn_back.png" Grid.Column="0" Margin="30" HeightRequest="20" WidthRequest="20"
                                 HorizontalOptions="Start" VerticalOptions="Center">
                         <Image.GestureRecognizers>
                             <TapGestureRecognizer Tapped="Back" NumberOfTapsRequired="1"></TapGestureRecognizer>
