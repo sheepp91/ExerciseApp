@@ -256,4 +256,10 @@
   <ItemGroup>
     <BundleResource Include="Resources\IconIV.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\RunningBadge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\RunningBadge2.png" />
+  </ItemGroup>
 </Project>

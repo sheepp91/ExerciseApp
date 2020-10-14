@@ -19,7 +19,7 @@ namespace ExerciseApp.View
         }
         private async void OnImageButtonClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new GeneralFitnessSkillTree());
+            await Navigation.PushAsync(new RunningSkillTree());
         }
         private async void Share(object sender, EventArgs e)
         {

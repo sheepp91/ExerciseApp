@@ -55,10 +55,10 @@
 
 
                 <Image Source="Decagon.png" Grid.Row="3" Grid.RowSpan="4"></Image>
-                <Label Text="I" FontFamily="Times New Roman" FontSize="75" FontAttributes="None" TextColor="#8F000000" Grid.Row="3" Grid.RowSpan="4" Margin="0,15,0,0" HorizontalOptions="Center" />
+                <Label Text="I" FontFamily="serif" FontSize="75" FontAttributes="None" TextColor="#8F000000" Grid.Row="3" Grid.RowSpan="4" Margin="0,15,0,0" HorizontalOptions="Center" />
                 <Button Clicked="Button_Clicked" Opacity="0.0" Grid.Row="3" Grid.RowSpan="4"></Button>
                 <Image Source="Decagon.png" Grid.Row="7"  Grid.RowSpan="4"></Image>
-                <Label Text="II" FontFamily="Times New Roman" FontSize="75" FontAttributes="None" TextColor="#8F000000" Grid.Row="3" Grid.RowSpan="4" Margin="0,15,0,0" HorizontalOptions="Center" />
+                <Label Text="II" FontFamily="serif" FontSize="75" FontAttributes="None" TextColor="#8F000000" Grid.Row="3" Grid.RowSpan="4" Margin="0,15,0,0" HorizontalOptions="Center" />
                 <Button Clicked="Button_Clicked" Opacity="0.0" Grid.Row="7" Grid.RowSpan="4"></Button>
 
             </Grid>

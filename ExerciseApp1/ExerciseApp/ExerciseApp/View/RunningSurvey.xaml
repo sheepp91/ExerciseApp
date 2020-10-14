@@ -2,15 +2,60 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ExerciseApp.View.RunningSurvey"
-             BackgroundImageSource="top.png">
+             BackgroundImageSource="top.png"
+             NavigationPage.HasNavigationBar="false">
     <ContentPage.Content>
-        <StackLayout Margin="0,60,0,60">
-            <Label Text="What is your 100m Record?"
-                VerticalOptions="StartAndExpand" 
-                HorizontalOptions="CenterAndExpand"
-                 FontAttributes="Bold" TextColor="White" FontSize="28" FontFamily="SegoeUIEmoji#400"/>
-            <Entry Placeholder="Enter Time (Seconds)" VerticalOptions="StartAndExpand" 
+        <StackLayout>
+            <StackLayout>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.5*" />
+                        <ColumnDefinition Width="0.5*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100" />
+                    </Grid.RowDefinitions>
+            <Image Source="icn_back.png" Grid.Column="0" Margin="30" HeightRequest="20" WidthRequest="20"
+                                HorizontalOptions="Start" VerticalOptions="Center">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Back" NumberOfTapsRequired="1"></TapGestureRecognizer>
+                </Image.GestureRecognizers>
+            </Image>
+        </Grid>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0" HorizontalOptions="Center" Text="Current Skill Test" FontFamily="Europa#700" FontSize="30" FontAttributes="Bold" TextColor="#FFFFFFFF" />
+                    <Line Grid.Row="0" Margin="0,30,0,0" X1="0" Y1="20" X2="290" Y2="20"
+    StrokeLineCap="Round"
+      Stroke="White"
+      StrokeThickness="2"
+                      HorizontalOptions="Center"/>
+                    <Label HorizontalOptions="Center" Grid.Row="0" Margin="0,60,0,0" Text="To Determine The Best Starting Point" FontFamily="Europa#700" FontSize="14" FontAttributes="Bold" TextColor="#FFFFFFFF" />
+                    <Label HorizontalOptions="Center" Grid.Row="1" Margin="0,20" FontFamily="Europa#700" FontSize="18" FontAttributes="Bold" TextColor="#FFFFFFFF">
+                        <Label.Text>
+                            What is your 100m Record?
+                        </Label.Text>
+                    </Label>
+                    <Entry Placeholder="Enter Time (Seconds)" VerticalOptions="StartAndExpand" Grid.Row="2"
                 HorizontalOptions="CenterAndExpand" FontAttributes="Bold" PlaceholderColor="White" TextColor="White" FontSize="28" FontFamily="SegoeUIEmoji#400" Keyboard="Numeric"/>
+                    <Image Source="btn_white" Grid.Row="4" Margin="0,0,0,0" VerticalOptions="Center" IsEnabled="True">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnImageButtonClicked" NumberOfTapsRequired="1"></TapGestureRecognizer>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Grid>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

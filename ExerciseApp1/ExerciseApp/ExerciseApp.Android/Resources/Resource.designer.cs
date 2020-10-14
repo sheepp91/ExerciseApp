@@ -8627,49 +8627,52 @@ namespace ExerciseApp.Droid
 			public const int RunningBadge = 2131165352;
 			
 			// aapt resource value: 0x7F0700A9
-			public const int settings = 2131165353;
+			public const int RunningBadge2 = 2131165353;
 			
 			// aapt resource value: 0x7F0700AA
-			public const int social = 2131165354;
+			public const int settings = 2131165354;
 			
 			// aapt resource value: 0x7F0700AB
-			public const int socialhighlighted = 2131165355;
+			public const int social = 2131165355;
 			
 			// aapt resource value: 0x7F0700AC
-			public const int star = 2131165356;
+			public const int socialhighlighted = 2131165356;
 			
 			// aapt resource value: 0x7F0700AD
-			public const int starhighlighted = 2131165357;
+			public const int star = 2131165357;
 			
 			// aapt resource value: 0x7F0700AE
-			public const int titlelogoblank = 2131165358;
+			public const int starhighlighted = 2131165358;
 			
 			// aapt resource value: 0x7F0700AF
-			public const int toolbar = 2131165359;
+			public const int titlelogoblank = 2131165359;
 			
 			// aapt resource value: 0x7F0700B0
-			public const int tooltip_frame_dark = 2131165360;
+			public const int toolbar = 2131165360;
 			
 			// aapt resource value: 0x7F0700B1
-			public const int tooltip_frame_light = 2131165361;
+			public const int tooltip_frame_dark = 2131165361;
 			
 			// aapt resource value: 0x7F0700B2
-			public const int top = 2131165362;
+			public const int tooltip_frame_light = 2131165362;
 			
 			// aapt resource value: 0x7F0700B3
-			public const int TopBanner = 2131165363;
+			public const int top = 2131165363;
 			
 			// aapt resource value: 0x7F0700B4
-			public const int TrackedSkill = 2131165364;
+			public const int TopBanner = 2131165364;
 			
 			// aapt resource value: 0x7F0700B5
-			public const int TrackSkill = 2131165365;
+			public const int TrackedSkill = 2131165365;
 			
 			// aapt resource value: 0x7F0700B6
-			public const int WeightBadge = 2131165366;
+			public const int TrackSkill = 2131165366;
 			
 			// aapt resource value: 0x7F0700B7
-			public const int Weightlifting = 2131165367;
+			public const int WeightBadge = 2131165367;
+			
+			// aapt resource value: 0x7F0700B8
+			public const int Weightlifting = 2131165368;
 			
 			static Drawable()
 			{

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExerciseApp.View.RunningBadge"
+             NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#344856">
+            <StackLayout>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="2*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="0.3*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0" VerticalOptions="Center" Margin="0,30" HorizontalOptions="Center" Text="Congratulations!" FontFamily="Europa#700" FontSize="30" FontAttributes="Bold" TextColor="#FFFFFFFF" />
+
+                    <Image Source="RunningBadge2.png" WidthRequest="200" Grid.Row="1" HorizontalOptions="Center"/>
+                    <Label x:Name="level" Grid.Row="2" Text="Level 5" HorizontalOptions="Center" VerticalOptions="Start" FontFamily="Europa#700" FontSize="30" FontAttributes="Bold" TextColor="#FFFFFFFF"></Label>
+                    <Line Grid.Row="2" Margin="0,30,0,0" X1="0" Y1="20" X2="200" Y2="20"
+    StrokeLineCap="Round"
+      Stroke="White"
+      StrokeThickness="2"
+                      HorizontalOptions="Center"/>
+                    <Label Grid.Row="2" HorizontalOptions="Center" VerticalOptions="End" Text="Your journey to levelling up your &#10;     general fitness starts here" FontFamily="Europa#700" FontSize="18" FontAttributes="Bold" TextColor="#FFFFFFFF" />
+                    <Button ImageSource="icn_share_active.png" Grid.Row="3" Margin="0,10,0,0" BackgroundColor="#344856" VerticalOptions="End" Clicked="Share" IsEnabled="True"></Button>
+                    <Button ImageSource="btn_close" Grid.Row="4" VerticalOptions="Center" Margin="0,0,0,0" WidthRequest="100" HeightRequest="30" BackgroundColor="#344856" IsEnabled="True" Clicked="OnImageButtonClicked" ></Button>
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

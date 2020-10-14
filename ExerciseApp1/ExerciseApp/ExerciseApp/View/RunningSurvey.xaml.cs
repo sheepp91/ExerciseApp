@@ -16,5 +16,13 @@ namespace ExerciseApp.View
         {
             InitializeComponent();
         }
+        private async void Back(object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new RunningDistanceSelect());
+        }
+        async void OnImageButtonClicked(object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new RunningBadge());
+        }
     }
 }
