@@ -262,4 +262,16 @@
   <ItemGroup>
     <BundleResource Include="Resources\RunningBadge2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Olympic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SkillSlot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SkillSlot2.png" />
+  </ItemGroup>
 </Project>

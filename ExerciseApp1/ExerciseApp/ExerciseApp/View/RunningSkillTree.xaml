@@ -95,24 +95,33 @@
                         </Image.GestureRecognizers>
                     </Image>
                     <Label Text="V" FontFamily="serif" FontSize="75" FontAttributes="None" TextColor="#8F000000" Grid.Row="5" HorizontalOptions="Center" VerticalOptions="Center" />
-                    <Image Source="Decagon.png" Grid.Row="6" WidthRequest="150" HeightRequest="150">
+
+                    <Image Source="Olympic.png" Grid.Row="6" WidthRequest="150" HeightRequest="150">
                         <Image.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="Button_Clicked" />
+                            <TapGestureRecognizer/>
                         </Image.GestureRecognizers>
                     </Image>
-                    <Label Text="VI" FontFamily="serif" FontSize="75" FontAttributes="None" TextColor="#8F000000" Grid.Row="6" VerticalOptions="Center" HorizontalOptions="Center" />
+
+
                     <Image Source="Decagon.png" Grid.Row="7" WidthRequest="150" HeightRequest="150">
                         <Image.GestureRecognizers>
                             <TapGestureRecognizer Tapped="Button_Clicked" />
                         </Image.GestureRecognizers>
                     </Image>
-                    <Label Text="VII" FontFamily="serif" FontSize="75" FontAttributes="None" TextColor="#8F000000" Grid.Row="7" HorizontalOptions="Center" VerticalOptions="Center" />
+
+                    <Label Text="VI" FontFamily="serif" FontSize="75" FontAttributes="None" TextColor="#8F000000" Grid.Row="7" VerticalOptions="Center" HorizontalOptions="Center" />
                     <Image Source="Decagon.png" Grid.Row="8" WidthRequest="150" HeightRequest="150">
                         <Image.GestureRecognizers>
                             <TapGestureRecognizer Tapped="Button_Clicked" />
                         </Image.GestureRecognizers>
                     </Image>
-                    <Label Text="VIII" FontFamily="serif" FontSize="65" FontAttributes="None" TextColor="#8F000000" Grid.Row="8" VerticalOptions="Center" HorizontalOptions="Center" />
+                    <Label Text="VII" FontFamily="serif" FontSize="75" FontAttributes="None" TextColor="#8F000000" Grid.Row="8" HorizontalOptions="Center" VerticalOptions="Center" />
+                    <Image Source="Decagon.png" Grid.Row="9" WidthRequest="150" HeightRequest="150">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Button_Clicked" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Label Text="VIII" FontFamily="serif" FontSize="65" FontAttributes="None" TextColor="#8F000000" Grid.Row="9" VerticalOptions="Center" HorizontalOptions="Center" />
 
                 </Grid>
             </ScrollView>

@@ -15,11 +15,11 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
-                </Grid.RowDefinitions>    
-            <Image Grid.Row="0" Source="titlelogoblank.png" HeightRequest="70" WidthRequest="70" HorizontalOptions="Center" Margin="10,10"></Image>
-            <Image Grid.Row="0" Source="icn_inbox_dark.png" HeightRequest="15" WidthRequest="15" HorizontalOptions="End" Margin="10,10"></Image>
-            
-            <Image Grid.Row="1" Source="TopBanner.png" Margin="0,-30" HorizontalOptions="FillAndExpand" HeightRequest="180"></Image>
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0" Source="titlelogoblank.png" HeightRequest="70" WidthRequest="70" HorizontalOptions="Center" Margin="10,10"></Image>
+                <Image Grid.Row="0" Source="icn_inbox_dark.png" HeightRequest="15" WidthRequest="15" HorizontalOptions="End" Margin="10,10"></Image>
+
+                <Image Grid.Row="1" Source="TopBanner.png" Margin="0,-30" HorizontalOptions="FillAndExpand" HeightRequest="180"></Image>
                 <SearchBar Grid.Row="2"  Placeholder="Search for a Skill"
            CancelButtonColor="Gray"
            PlaceholderColor="Gray"
@@ -30,12 +30,32 @@
            BackgroundColor="White"
            HorizontalOptions="Center"       
            />
-                
-                    <Label Grid.Row="4" Text="Skill Categories" HorizontalOptions="Center" FontFamily="Europa#700" FontSize="18" FontAttributes="Bold" TextColor="#FF1B1C20" />
-                    <ImageButton Clicked="Fitness" Grid.Row="5" Source="GeneralFitness.png" Margin="0,20"  HorizontalOptions="Center" Aspect="AspectFill" HeightRequest="150" WidthRequest="250"></ImageButton>
-                    <ImageButton Clicked="Running" Grid.Row="6" Source="running.png" HorizontalOptions="Center" Aspect="AspectFill" HeightRequest="150" WidthRequest="250" ></ImageButton>
-                    <ImageButton Clicked="Weight" Grid.Row="7" Source="weightlifting.png" HorizontalOptions="Center" Aspect="AspectFill" HeightRequest="150" WidthRequest="250"></ImageButton>
-                    <ImageButton Clicked="Cycling" Grid.Row="8" Source="cycling.png" Margin="0,0,0,10" HorizontalOptions="Center" Aspect="AspectFill" HeightRequest="150" WidthRequest="250"></ImageButton>
+
+                <Label Grid.Row="4" Text="Skill Categories" HorizontalOptions="Center" FontFamily="Europa#700" FontSize="18" FontAttributes="Bold" TextColor="#FF1B1C20" />
+                <Image Grid.Row="5" Source="GeneralFitness.png" Margin="0,20"  HorizontalOptions="Center" Aspect="AspectFill" HeightRequest="150" WidthRequest="250">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Fitness" NumberOfTapsRequired="1"></TapGestureRecognizer>
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image Grid.Row="6" Source="running.png" HorizontalOptions="Center" Aspect="AspectFill" HeightRequest="150" WidthRequest="250" >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Running" NumberOfTapsRequired="1"></TapGestureRecognizer>
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image Grid.Row="7" Source="weightlifting.png" HorizontalOptions="Center" Aspect="AspectFill" HeightRequest="150" WidthRequest="250">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Weight" NumberOfTapsRequired="1"></TapGestureRecognizer>
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image Grid.Row="8" Source="cycling.png" Margin="0,0,0,10" HorizontalOptions="Center" Aspect="AspectFill" HeightRequest="150" WidthRequest="250">
+                    <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Cycling" NumberOfTapsRequired="1"></TapGestureRecognizer>
+                </Image.GestureRecognizers>
+                </Image>
+
             </Grid>
         </ScrollView>
 

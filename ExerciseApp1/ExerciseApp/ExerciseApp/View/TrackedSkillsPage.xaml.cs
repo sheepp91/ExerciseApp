@@ -11,11 +11,11 @@ namespace ExerciseApp.View
         {
             NavigationPage.SetHasNavigationBar(this, false);
             InitializeComponent();
-            title.Text = "Friends Page";
+            //title.Text = "Friends Page";
         }
-        private void Button_OnClicked(object sender, EventArgs e)
-        {
-            title.Text = "You have no friends";
-        }
+        //private void Button_OnClicked(object sender, EventArgs e)
+        //{
+          //  title.Text = "You have no friends";
+        //}
     }
 }

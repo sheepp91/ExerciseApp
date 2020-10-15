@@ -1,16 +1,62 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ExerciseApp.View.TrackedSkillsPage"
-             BackgroundImageSource="background.png">
+             x:Class="ExerciseApp.View.TrackedSkillsPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label x:Name="title"
+        <ScrollView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="230"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                
+                <Image Grid.Row="0" Source="titlelogoblank.png" HeightRequest="70" WidthRequest="70" HorizontalOptions="Center" Margin="10,10"></Image>
+                <Image Grid.Row="0" Source="icn_inbox_dark.png" HeightRequest="15" WidthRequest="15" HorizontalOptions="End" Margin="10,10"></Image>
+
+                <Image Grid.Row="1" VerticalOptions="Start" Source="top.png" Aspect="AspectFill" HeightRequest="230"></Image>
+                <Label Grid.Row="1" Text="Tracked Skills" Margin="0,20,0,0" HorizontalOptions="Center" FontFamily="Europa#700" FontSize="14" FontAttributes="Bold" TextColor="White" VerticalOptions="Start"/>
+                <Label Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Start" Margin="0,85,0,0" Text="50%" FontFamily="Europa#700" FontSize="30" FontAttributes="Bold" TextColor="#FFFFFFFF" />
+                <Line Grid.Row="1" Margin="-15,105,0,0" X1="0" Y1="20" X2="30" Y2="20"
+    StrokeLineCap="Round"
+      Stroke="White"
+      StrokeThickness="2"
+                      HorizontalOptions="Center"
+                      VerticalOptions="Start"/>
+                <Label HorizontalOptions="Center" Grid.Row="1" Margin="0,135,0,0" Text="Progress on &#10; tracked &#10; skills" FontFamily="Europa#700" FontSize="10" FontAttributes="Bold" TextColor="#FFFFFFFF" />
+                <Image Grid.Row="1" Source="chart.png"  HorizontalOptions="Center" VerticalOptions="Start" Margin="-68,65,0,0" WidthRequest="136" HeightRequest="136"></Image>
+
+
+                <Label Grid.Row="2" Text="General Fitness" HorizontalOptions="Start" VerticalOptions="Start" Margin="10,10" FontFamily="Europa#700" FontSize="18" FontAttributes="Bold" TextColor="#0587C5" />
+                <Image Grid.Row="2" Source="SkillSlot2.png" HorizontalOptions="Start" VerticalOptions="Center" Margin="0,20,0,0" HeightRequest="120" WidthRequest="120"></Image>
+                <Label Grid.Row="2" Text="General &#10; Fitness" HorizontalOptions="Start" Margin="40,60" FontFamily="Europa#700" FontSize="10" FontAttributes="Bold" TextColor="#D5DD22" />
+
+                <Label Grid.Row="3" Text="Running" HorizontalOptions="Start" VerticalOptions="Start" Margin="10,0" FontFamily="Europa#700" FontSize="18" FontAttributes="Bold" TextColor="#0587C5" />
+                <Image Grid.Row="3" Source="SkillSlot2.png" HorizontalOptions="Start" VerticalOptions="Center" Margin="0,20,0,0" HeightRequest="120" WidthRequest="120"></Image>
+                <Label Grid.Row="3" Text="100m" HorizontalOptions="Start" Margin="35,60" FontFamily="Europa#700" FontSize="18" FontAttributes="Bold" TextColor="#FFDD01" />
+
+                <Label Grid.Row="4" Text="Weightlifting" HorizontalOptions="Start" VerticalOptions="Start" Margin="10,0" FontFamily="Europa#700" FontSize="18" FontAttributes="Bold" TextColor="#0587C5" />
+                <Image Grid.Row="4" Source="SkillSlot2.png" HorizontalOptions="Start" VerticalOptions="Center" Margin="0,20,0,0" HeightRequest="120" WidthRequest="120"></Image>
+                <!--<Label Grid.Row="4" Text="General &#10; Fitness" HorizontalOptions="Start" Margin="40,70" FontFamily="Europa#700" FontSize="10" FontAttributes="Bold" TextColor="#D5DD22" />-->
+
+                <Label Grid.Row="5" Text="Cycling" HorizontalOptions="Start" VerticalOptions="Start" Margin="10,0" FontFamily="Europa#700" FontSize="18" FontAttributes="Bold" TextColor="#0587C5" />
+                <Image Grid.Row="5" Source="SkillSlot2.png" HorizontalOptions="Start" VerticalOptions="Center" Margin="0,20" HeightRequest="120" WidthRequest="120"></Image>
+                <!--<Label Grid.Row="5" Text="General &#10; Fitness" HorizontalOptions="Start" Margin="40,70" FontFamily="Europa#700" FontSize="10" FontAttributes="Bold" TextColor="#D5DD22" />-->
+
+            </Grid>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>
+
+
+<!--<Label x:Name="title"
                 FontSize="30"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
 
-            <Button Text ="Click Me" HorizontalOptions="Center" VerticalOptions="Center" Clicked="Button_OnClicked"/>
-        </StackLayout>
-    </ContentPage.Content>
-</ContentPage>
+            <Button Text ="Click Me" HorizontalOptions="Center" VerticalOptions="Center" Clicked="Button_OnClicked"/>-->
+

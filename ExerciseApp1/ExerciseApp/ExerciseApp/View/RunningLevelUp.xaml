@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExerciseApp.View.RunningLevelUp"
+             NavigationPage.HasNavigationBar="false"
+             BackgroundImageSource="top.png">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.5*" />
+                        <ColumnDefinition Width="0.5*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100" />
+                    </Grid.RowDefinitions>
+                    <Image Source="icn_back.png" Grid.Column="0" Margin="30" HeightRequest="20" WidthRequest="20"
+                                HorizontalOptions="Start" VerticalOptions="Center">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Back" NumberOfTapsRequired="1"></TapGestureRecognizer>
+                        </Image.GestureRecognizers>
+                    </Image>
+
+                </Grid>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="130">
+                        </RowDefinition>
+                        <RowDefinition Height="120">
+                        </RowDefinition>
+                        <RowDefinition Height="100">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="100">
+                        </RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0" HorizontalOptions="Center" Text="Level 5" FontFamily="Europa#700" FontSize="30" FontAttributes="Bold" TextColor="#FFFFFFFF" />
+                    <Line Grid.Row="0" Margin="0,30,0,0" X1="0" Y1="20" X2="50" Y2="20"
+    StrokeLineCap="Round"
+      Stroke="White"
+      StrokeThickness="2"
+                      HorizontalOptions="Center"/>
+                    <Label HorizontalOptions="Center" Grid.Row="0" Margin="0,60,0,0" Text="Progress: 0%" FontFamily="Europa#700" FontSize="14" TextColor="#FFFFFFFF" />
+                    <Label HorizontalOptions="Center" Grid.Row="1" Margin="0,0" FontFamily="Europa#700" FontSize="18" FontAttributes="Bold" TextColor="#FFFFFFFF">
+                        <Label.Text>
+                            Run 100m in 15.5 Seconds
+
+                        </Label.Text>
+                    </Label>
+                    <CheckBox Grid.Row="2" VerticalOptions="Start" HorizontalOptions="Center" Color="White"></CheckBox>
+                    <Image Source="btn_white" Grid.Row="4" Margin="0,0,0,0" VerticalOptions="Center" IsEnabled="True">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnImageButtonClicked" NumberOfTapsRequired="1"></TapGestureRecognizer>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
