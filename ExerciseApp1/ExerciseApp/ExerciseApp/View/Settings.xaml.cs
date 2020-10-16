@@ -16,16 +16,16 @@ namespace ExerciseApp.View
         {
             InitializeComponent();
         }
-        private bool _isLiked;
-        public bool IsLiked
-        {
-            get { return _isLiked; }
-            set
-            {
-                _isLiked = value;
-                OnPropertyChanged("IsLiked");
-            }
-        }
+        //private bool _isLiked;
+        //public bool IsLiked
+        //{
+          //  get { return _isLiked; }
+            //set
+            //{
+              //  _isLiked = value;
+               // OnPropertyChanged("IsLiked");
+            //}
+        //}
 
     }
 }

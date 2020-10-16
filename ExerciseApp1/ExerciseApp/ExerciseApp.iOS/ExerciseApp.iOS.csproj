@@ -274,4 +274,10 @@
   <ItemGroup>
     <BundleResource Include="Resources\SkillSlot2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\editprofile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Josh.png" />
+  </ItemGroup>
 </Project>

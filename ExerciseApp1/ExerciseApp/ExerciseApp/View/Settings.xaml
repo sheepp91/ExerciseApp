@@ -2,22 +2,63 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ExerciseApp.View.Settings"
-             NavigationPage.HasNavigationBar="false">
+             NavigationPage.HasNavigationBar="false"
+             BackgroundColor="#FFECEFF0">
     <ContentPage.Content>
         <StackLayout>
-            <Image>
-                <Image.GestureRecognizers>
-                    <TapGestureRecognizer Command="{Binding HeartTapCommand}" NumberOfTapsRequired="1" />
-                </Image.GestureRecognizers>
-                <Image.Triggers>
-                    <DataTrigger TargetType="Image" Binding="{Binding IsLiked}" Value="True">
-                        <Setter Property="Source" Value="TrackSkill.png"/>
-                    </DataTrigger>
-                    <DataTrigger TargetType="Image" Binding="{Binding IsLiked}" Value="False">
-                        <Setter Property="Source" Value="TrackedSkill.png"/>
-                    </DataTrigger>
-                </Image.Triggers>
-            </Image>
+            <StackLayout Padding="0" HeightRequest="80" BackgroundColor="White">
+            <Label HorizontalOptions="Center" Margin="0,30" Text="Settings" FontFamily="Europa#700" FontSize="18" FontAttributes="Bold" TextColor="#FF324755" />
+        </StackLayout>
+        
+        <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="145"></RowDefinition>
+                </Grid.RowDefinitions>
+            <Image Grid.Row="0" Source="top.png" Aspect="AspectFill" HeightRequest="145"></Image>
+            <Image Grid.Row="0" Source="Josh.png" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="98" WidthRequest="98"></Image>
+            <Image Grid.Row="0" Source="editprofile.png" HeightRequest="42" WidthRequest="42" HorizontalOptions="Center" Margin="0,10" VerticalOptions="End"></Image>
+        </Grid>
+            <ScrollView>
+                <Frame CornerRadius="15" Margin="20,20,20,20" HeightRequest="340.60888671875" BackgroundColor="#FFFFFFFF">
+                    <Grid RowSpacing="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="50" ></RowDefinition>
+                            <RowDefinition Height="50"></RowDefinition>
+                            <RowDefinition Height="50"></RowDefinition>
+                            <RowDefinition Height="50"></RowDefinition>
+                            <RowDefinition Height="50"></RowDefinition>
+                            <RowDefinition Height="50"></RowDefinition>
+
+                        </Grid.RowDefinitions>
+                        <Label Grid.Row="0" Text="Push Notifications" FontFamily="Europa#700" FontSize="15" FontAttributes="Bold" TextColor="#FF334856" VerticalOptions="Center"/>
+                        <Label Grid.Row="1" Text="Allow Access to My Contacts" FontFamily="Europa#700" FontSize="15" FontAttributes="Bold" TextColor="#FF334856" VerticalOptions="Center"></Label>
+                        <Label Grid.Row="2" VerticalOptions="Center" Text="Allow My Location" FontFamily="Europa#700" FontSize="15" FontAttributes="Bold" TextColor="#FF334856" />
+                        <Label Grid.Row="3" VerticalOptions="Center" Text="Others Can See My Activity" FontFamily="Europa#700" FontSize="15" FontAttributes="Bold" TextColor="#FF334856" />
+                        <Label Grid.Row="4" VerticalOptions="Center" Text="Provide Feedback" FontFamily="Europa#700" FontSize="15" FontAttributes="Bold" TextColor="#FF334856" />
+                        <Label Grid.Row="5" VerticalOptions="Center" Text="Update a World Record" FontFamily="Europa#700" FontSize="15" FontAttributes="Bold" TextColor="#FF334856" />
+                        <Switch Grid.Row="0" VerticalOptions="Center" HorizontalOptions="End" IsToggled="true"/>
+                        <Switch Grid.Row="1" VerticalOptions="Center" HorizontalOptions="End" IsToggled="true"/>
+                        <Switch Grid.Row="2" VerticalOptions="Center" HorizontalOptions="End" IsToggled="true"/>
+                        <Switch Grid.Row="3" VerticalOptions="Center" HorizontalOptions="End" IsToggled="true"/>
+
+                    </Grid>
+                </Frame>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
+
+
+<!--            <Image>
+    <Image.GestureRecognizers>
+        <TapGestureRecognizer Command="{Binding HeartTapCommand}" NumberOfTapsRequired="1" />
+    </Image.GestureRecognizers>
+    <Image.Triggers>
+        <DataTrigger TargetType="Image" Binding="{Binding IsLiked}" Value="True">
+            <Setter Property="Source" Value="TrackSkill.png"/>
+        </DataTrigger>
+        <DataTrigger TargetType="Image" Binding="{Binding IsLiked}" Value="False">
+            <Setter Property="Source" Value="TrackedSkill.png"/>
+        </DataTrigger>
+    </Image.Triggers>
+    </Image> -->
