@@ -16,15 +16,27 @@ namespace ExerciseApp.View
         {
             InitializeComponent();
         }
+
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Feedback());
+
+        }
+
+        private async void Button_Clicked_1(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new UpdateRecord());
+
+        }
         //private bool _isLiked;
         //public bool IsLiked
         //{
-          //  get { return _isLiked; }
-            //set
-            //{
-              //  _isLiked = value;
-               // OnPropertyChanged("IsLiked");
-            //}
+        //  get { return _isLiked; }
+        //set
+        //{
+        //  _isLiked = value;
+        // OnPropertyChanged("IsLiked");
+        //}
         //}
 
     }

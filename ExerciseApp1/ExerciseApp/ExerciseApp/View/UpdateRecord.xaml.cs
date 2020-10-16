@@ -10,13 +10,12 @@ using Xamarin.Forms.Xaml;
 namespace ExerciseApp.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Feedback : ContentPage
+    public partial class UpdateRecord : ContentPage
     {
-        public Feedback()
+        public UpdateRecord()
         {
             InitializeComponent();
         }
-
         private async void Back(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Settings());

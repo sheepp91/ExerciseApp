@@ -34,12 +34,12 @@
                         <Label Grid.Row="1" Text="Allow Access to My Contacts" FontFamily="Europa#700" FontSize="15" FontAttributes="Bold" TextColor="#FF334856" VerticalOptions="Center"></Label>
                         <Label Grid.Row="2" VerticalOptions="Center" Text="Allow My Location" FontFamily="Europa#700" FontSize="15" FontAttributes="Bold" TextColor="#FF334856" />
                         <Label Grid.Row="3" VerticalOptions="Center" Text="Others Can See My Activity" FontFamily="Europa#700" FontSize="15" FontAttributes="Bold" TextColor="#FF334856" />
-                        <Label Grid.Row="4" VerticalOptions="Center" Text="Provide Feedback" FontFamily="Europa#700" FontSize="15" FontAttributes="Bold" TextColor="#FF334856" />
-                        <Label Grid.Row="5" VerticalOptions="Center" Text="Update a World Record" FontFamily="Europa#700" FontSize="15" FontAttributes="Bold" TextColor="#FF334856" />
-                        <Switch Grid.Row="0" VerticalOptions="Center" HorizontalOptions="End" IsToggled="true"/>
-                        <Switch Grid.Row="1" VerticalOptions="Center" HorizontalOptions="End" IsToggled="true"/>
-                        <Switch Grid.Row="2" VerticalOptions="Center" HorizontalOptions="End" IsToggled="true"/>
-                        <Switch Grid.Row="3" VerticalOptions="Center" HorizontalOptions="End" IsToggled="true"/>
+                        <Button BackgroundColor="White" Clicked="Button_Clicked" Grid.Row="4" VerticalOptions="Center" Text="Provide Feedback" FontFamily="Europa#700" FontSize="15" FontAttributes="Bold" TextColor="#FF334856" />
+                        <Button BackgroundColor="White" Clicked="Button_Clicked_1" Grid.Row="5" VerticalOptions="Center" Text="Update a World Record" FontFamily="Europa#700" FontSize="15" FontAttributes="Bold" TextColor="#FF334856" />
+                        <Switch Grid.Row="0" ThumbColor="#344856" OnColor="#7FFFD4" VerticalOptions="Center" HorizontalOptions="End" IsToggled="true"/>
+                        <Switch Grid.Row="1" ThumbColor="#344856" OnColor="#7FFFD4" VerticalOptions="Center" HorizontalOptions="End" IsToggled="true"/>
+                        <Switch Grid.Row="2" ThumbColor="#344856" OnColor="#7FFFD4" VerticalOptions="Center" HorizontalOptions="End" IsToggled="true"/>
+                        <Switch Grid.Row="3" ThumbColor="#344856" OnColor="#7FFFD4" VerticalOptions="Center" HorizontalOptions="End" IsToggled="true"/>
 
                     </Grid>
                 </Frame>

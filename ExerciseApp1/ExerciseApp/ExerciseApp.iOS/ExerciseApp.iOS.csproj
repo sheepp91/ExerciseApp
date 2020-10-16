@@ -280,4 +280,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\Josh.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icn_back_dark.png" />
+  </ItemGroup>
 </Project>

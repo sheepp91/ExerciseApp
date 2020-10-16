@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ExerciseApp.View.Feedback"
+             x:Class="ExerciseApp.View.UpdateRecord"
              NavigationPage.HasNavigationBar="false"
              BackgroundColor="#FFECEFF0">
     <ContentPage.Content>
@@ -10,7 +10,7 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="80"></RowDefinition>
                 </Grid.RowDefinitions>
-                <Label Grid.Row="0" HorizontalOptions="Center" Margin="0,30" Text="Provide Feedback" FontFamily="Europa#700" FontSize="18" FontAttributes="Bold" TextColor="#FF324755" />
+                <Label Grid.Row="0" HorizontalOptions="Center" Margin="0,28" Text="Update Record" FontFamily="Europa#700" FontSize="18" FontAttributes="Bold" TextColor="#FF324755" />
                 <Image Source="icn_back_dark.png" HeightRequest="20" WidthRequest="20"
                                 VerticalOptions="Center" HorizontalOptions="Start" Margin="30">
                     <Image.GestureRecognizers>
@@ -25,13 +25,16 @@
                     <RowDefinition Height="145"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Image Grid.Row="0" Source="Josh.png" HorizontalOptions="Start" Margin="30" VerticalOptions="Center" HeightRequest="98" WidthRequest="98"></Image>
-                <Label Text="Sheepp91" FontFamily="Europa#700" FontSize="16" FontAttributes="Bold" TextColor="#FF324755" HorizontalOptions="Center" VerticalOptions="Center"></Label>           
+                <Label Text="Sheepp91" FontFamily="Europa#700" FontSize="16" FontAttributes="Bold" TextColor="#FF324755" HorizontalOptions="Center" VerticalOptions="Center"></Label>
             </Grid>
-            <ScrollView>
-                <Frame Margin="20,20,20,20" HeightRequest="340.60888671875" BackgroundColor="#FFFFFFFF">
-                    <Entry Placeholder="Enter your feedback here" VerticalOptions="Start" ></Entry>
+            <StackLayout>
+                <Frame Margin="20,20,20,10" HeightRequest="50" BackgroundColor="#FFFFFFFF">
+                    <Entry Placeholder="What skill requires updating?" VerticalOptions="Start" ></Entry>
                 </Frame>
-            </ScrollView>
+                <Frame Margin="20,10,20,20" HeightRequest="50" BackgroundColor="#FFFFFFFF">
+                    <Entry Placeholder="What is the new record?" VerticalOptions="Start" ></Entry>
+                </Frame>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
