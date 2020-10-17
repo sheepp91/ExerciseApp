@@ -283,4 +283,10 @@
   <ItemGroup>
     <BundleResource Include="Resources\icn_back_dark.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\messaging.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\search.png" />
+  </ItemGroup>
 </Project>

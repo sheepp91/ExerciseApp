@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExerciseApp.View.Home"
+             NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <!--Tab Design-->
+        <StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Grid HorizontalOptions="FillAndExpand"
+          VerticalOptions="FillAndExpand"
+          ColumnSpacing="0"
+          RowSpacing="0"
+          Padding="0">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+
+                <!--Details Tab-->
+
+                <StackLayout Grid.Row="0"
+                     Grid.Column="0"
+                     Padding="0"
+                     VerticalOptions="FillAndExpand">
+                    <Button x:Name="tab1button" Clicked="Tab1Clicked" Text="You" />
+
+                </StackLayout>
+
+                <!-- Tab 2 -->
+                <StackLayout Grid.Row="0"
+                     Grid.Column="1"
+                     Padding="0"
+                     VerticalOptions="FillAndExpand">
+                    <Button x:Name="tab2button" Clicked="Tab2Clicked" Text="Feed" />
+                </StackLayout> 
+            </Grid>
+        </StackLayout>
+
+        <!-- tab 1 container -->
+        <StackLayout x:Name="stkTab1">
+
+                <Label Text="Tab 1"></Label>
+        </StackLayout>
+
+        <!-- tab 2 container -->
+        <StackLayout x:Name="stkTab2" >
+                <Label Text="Tab 2"></Label>
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

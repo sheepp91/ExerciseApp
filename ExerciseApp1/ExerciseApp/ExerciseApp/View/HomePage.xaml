@@ -25,7 +25,7 @@
 
     <NavigationPage Icon="social.png" Title="Social" BarTextColor="Gray">
         <x:Arguments>
-            <local:SkillTreePage/>
+            <local:Home/>
         </x:Arguments>
     </NavigationPage>
 
