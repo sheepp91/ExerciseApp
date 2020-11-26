@@ -2,6 +2,7 @@
 using System;
 using System.ComponentModel;
 using Xamarin.Forms;
+using ExerciseApp.View;
 
 namespace ExerciseApp
 {
@@ -14,9 +15,29 @@ namespace ExerciseApp
         {
             InitializeComponent();
         }
-        private async void NavigateButton_OnClicked(object sender, EventArgs e)
+        public async void NavigateButton_OnClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Onboarding1());
+            bool IsUsernameEmpty = string.IsNullOrEmpty(usernameEntry.Text);
+            bool IsPasswordEmpty = string.IsNullOrEmpty(passwordEntry.Text);
+
+            if(IsUsernameEmpty == true || IsPasswordEmpty == true)
+            {
+
+
+            }
+            
+            else
+            {
+                if (OnboardingComplete == true)
+                {
+                    await Navigation.PushAsync(new HomePage());
+                }
+                else
+                        {
+                            await Navigation.PushAsync(new Onboarding1());
+                        }
+            }
+
         }
         private async void RegisterPage(object sender, EventArgs e)
         {

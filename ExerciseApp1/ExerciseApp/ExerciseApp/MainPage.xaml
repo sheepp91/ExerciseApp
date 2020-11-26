@@ -23,10 +23,10 @@
                 <Label x:Name="LoginText" Text="LOG IN" TextColor="Black" FontSize="20" FontAttributes="Bold"/>
                 <StackLayout Spacing="10">
                     <Grid WidthRequest="160" Padding="10,0" BackgroundColor="#F6F6F6" HorizontalOptions="Start">
-                        <Entry Placeholder="Username" FontSize="12"/>
+                        <Entry  x:Name="usernameEntry" Placeholder="Username" FontSize="12"/>
                     </Grid>
                     <Grid WidthRequest="160" Padding="10,0" BackgroundColor="#F6F6F6" HorizontalOptions="Start">
-                        <Entry Placeholder="Password" FontSize="12"/>
+                        <Entry x:Name="passwordEntry" Placeholder="Password" FontSize="12"/>
                     </Grid>
                 </StackLayout>
                 <Grid  HorizontalOptions="Start" HeightRequest="33" WidthRequest="33">

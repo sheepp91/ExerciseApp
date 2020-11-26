@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExerciseApp.View.Post"
+             NavigationPage.HasNavigationBar="false"
+             BackgroundColor="#FFECEFF0">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid Padding="0" HeightRequest="80" BackgroundColor="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" HorizontalOptions="Center" Margin="0,28" Text="Update Record" FontFamily="Europa#700" FontSize="18" FontAttributes="Bold" TextColor="#FF324755" />
+                <Image Source="icn_back_dark.png" HeightRequest="20" WidthRequest="20"
+                                VerticalOptions="Center" HorizontalOptions="Start" Margin="30">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Back" NumberOfTapsRequired="1"></TapGestureRecognizer>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Button Text="Submit" BackgroundColor="White" HorizontalOptions="End" FontFamily="Europa#700" FontSize="16" FontAttributes="Bold" TextColor="#FF324755"></Button>
+            </Grid>
+
+            <Grid BackgroundColor="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="145"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0" Source="Josh.png" HorizontalOptions="Start" Margin="30" VerticalOptions="Center" HeightRequest="98" WidthRequest="98"></Image>
+                <Label Text="Sheepp91" FontFamily="Europa#700" FontSize="16" FontAttributes="Bold" TextColor="#FF324755" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+            </Grid>
+            <StackLayout>
+                <Frame Margin="20,20,20,10" HeightRequest="50" BackgroundColor="#FFFFFFFF">
+                    <Entry Placeholder="Posting To: My Feed" VerticalOptions="Start" ></Entry>
+                </Frame>
+                <Frame Margin="20,10,20,20" HeightRequest="50" BackgroundColor="#FFFFFFFF">
+                    <Entry Placeholder="Write Message Here" VerticalOptions="Start" ></Entry>
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+
+

@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ExerciseApp.View.Home"
-             NavigationPage.HasNavigationBar="false">
+             NavigationPage.HasNavigationBar="false"
+             BackgroundColor="#FFF0F3F4">
     <ContentPage.Content>
         <!--Tab Design-->
         <StackLayout>
@@ -11,48 +12,112 @@
           VerticalOptions="FillAndExpand"
           ColumnSpacing="0"
           RowSpacing="0"
-          Padding="0">
+          Padding="0"
+                  BackgroundColor="White">
 
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="100" />
                     <RowDefinition Height="Auto" />
-                </Grid.RowDefinitions>
+
+                    </Grid.RowDefinitions>
 
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*" />
                     <ColumnDefinition Width="1*" />
                 </Grid.ColumnDefinitions>
 
-                <!--Details Tab-->
+                    <Image Grid.Row="0" Grid.ColumnSpan="2" Source="titlelogoblank.png" HeightRequest="90" WidthRequest="90" HorizontalOptions="Center" Margin="10,10"></Image>
+                    <Image Grid.Row="0" Grid.Column="0"  Source="icn_scribe_dark.png" HeightRequest="15" WidthRequest="15" HorizontalOptions="Start" Margin="10,10">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1"></TapGestureRecognizer>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image Grid.Row="0" Grid.Column="0"  Source="messaging.png" HeightRequest="25" WidthRequest="25" HorizontalOptions="Center" Margin="10,10"></Image>
+                    <Image Grid.Row="0" Grid.Column="1" Source="search.png" HeightRequest="25" WidthRequest="25" HorizontalOptions="Center" Margin="10,10"></Image>
+                    <Image Grid.Row="0" Grid.Column="1" Source="icn_inbox_dark.png" HeightRequest="15" WidthRequest="15" HorizontalOptions="End" Margin="10,10"></Image>
 
-                <StackLayout Grid.Row="0"
+
+                    <!--Details Tab-->
+
+                <StackLayout Grid.Row="1"
                      Grid.Column="0"
                      Padding="0"
-                     VerticalOptions="FillAndExpand">
-                    <Button x:Name="tab1button" Clicked="Tab1Clicked" Text="You" />
+                     VerticalOptions="Fill">
+                        <Button x:Name="tab1button" Clicked="Tab1Clicked" Text="You" TextColor="#334856"/>
 
                 </StackLayout>
 
                 <!-- Tab 2 -->
-                <StackLayout Grid.Row="0"
+                <StackLayout Grid.Row="1"
                      Grid.Column="1"
                      Padding="0"
-                     VerticalOptions="FillAndExpand">
-                    <Button x:Name="tab2button" Clicked="Tab2Clicked" Text="Feed" />
+                     VerticalOptions="Fill">
+                        <Button x:Name="tab2button" Clicked="Tab2Clicked" Text="Feed" TextColor="#334856"/>
                 </StackLayout> 
             </Grid>
         </StackLayout>
 
         <!-- tab 1 container -->
         <StackLayout x:Name="stkTab1">
+                
+                <Label Text="Your Updates" TextColor="#334856" FontFamily="Europa#700" FontSize="14" FontAttributes="Bold" Margin="30,10" Padding="0"></Label>
+                <Frame HeightRequest="120" HasShadow="true" BackgroundColor="#FFFFFFFF" CornerRadius="15" Margin="20,0,20,5">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition Height="25"></RowDefinition>
+                       </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60"></ColumnDefinition>
+                            <ColumnDefinition Width="auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
 
-                <Label Text="Tab 1"></Label>
-        </StackLayout>
+                        <Image Source="josh.png" Grid.Row="0" Grid.Column="0" HeightRequest="25" WidthRequest="25"></Image>
+                        <Label Grid.Row="0" Grid.Column="1" Text="Sheepp91 Achieved &#10;Level 5 at General Fitness:&#10;Wearing red and running twice as fast" FontFamily="Europa#700" FontSize="15" FontAttributes="Bold" TextColor="#FF334856" />
+                    <StackLayout Orientation="Horizontal" Grid.Row="1" Grid.ColumnSpan="2">
+                    <Image Source="icn_like.png" ></Image>
+                        <Label Text="LIKE" FontFamily="Europa#700" FontSize="12" FontAttributes="Bold" TextColor="#FF334856" />
+                        
+                        <Image Source="messaging.png"></Image>
+                        <Label Text="COMMENT" FontFamily="Europa#700" FontSize="12" FontAttributes="Bold" TextColor="#FF334856" />
+                    </StackLayout>
+                    </Grid>
+
+                </Frame>
+
+                <Frame HeightRequest="168.4" HasShadow="true" BackgroundColor="#FFFFFFFF" CornerRadius="15" Margin="20,0,20,5">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition Height="25"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60"></ColumnDefinition>
+                            <ColumnDefinition Width="auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Image Source="RunningBadge2.png" Grid.Row="0" Grid.Column="0" HeightRequest="65" WidthRequest="65"></Image>
+                        <Label Grid.Row="0" Grid.Column="1" Text="Sheepp91 Posted in &#10;100m Running IV:" FontFamily="Europa#700" FontSize="15" FontAttributes="Bold" TextColor="#FF334856" />
+                        <StackLayout Orientation="Horizontal" Grid.Row="1" Grid.ColumnSpan="2">
+                            <Image Source="icn_like.png" ></Image>
+                            <Label Text="LIKE" FontFamily="Europa#700" FontSize="12" FontAttributes="Bold" TextColor="#FF334856" />
+
+                            <Image Source="messaging.png"></Image>
+                            <Label Text="COMMENT" FontFamily="Europa#700" FontSize="12" FontAttributes="Bold" TextColor="#FF334856" />
+                        </StackLayout>
+                    </Grid>
+
+                </Frame>
+
+            </StackLayout>
 
         <!-- tab 2 container -->
         <StackLayout x:Name="stkTab2" >
-                <Label Text="Tab 2"></Label>
+                <Label Text="From Friends and Groups" TextColor="#334856" FontFamily="Europa#700" FontSize="14" FontAttributes="Bold" Margin="30,30"></Label>
 
             </StackLayout>
+           
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
