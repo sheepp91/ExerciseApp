@@ -20,22 +20,21 @@ namespace ExerciseApp
             bool IsUsernameEmpty = string.IsNullOrEmpty(usernameEntry.Text);
             bool IsPasswordEmpty = string.IsNullOrEmpty(passwordEntry.Text);
 
-            if(IsUsernameEmpty == true || IsPasswordEmpty == true)
+            if(IsUsernameEmpty || IsPasswordEmpty )
             {
-
-
+                
             }
             
             else
             {
-                if (OnboardingComplete == true)
+                if (onboardingComplete)
                 {
                     await Navigation.PushAsync(new HomePage());
                 }
                 else
-                        {
-                            await Navigation.PushAsync(new Onboarding1());
-                        }
+                {
+                    await Navigation.PushAsync(new Onboarding1());
+                }
             }
 
         }

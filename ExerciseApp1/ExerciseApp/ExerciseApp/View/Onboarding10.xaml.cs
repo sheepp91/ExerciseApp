@@ -18,7 +18,7 @@ namespace ExerciseApp.View
         }
         public async void OnImageButtonClicked(object sender, EventArgs e)
         {
-            bool OnboardingComplete = true;
+            bool onboardingComplete = true;
             await Navigation.PushAsync(new SkillTreePage());
         }
 
