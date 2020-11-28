@@ -3,6 +3,8 @@ using System;
 using System.ComponentModel;
 using Xamarin.Forms;
 using ExerciseApp.View;
+using Android.Preferences;
+using Android.Content;
 
 namespace ExerciseApp
 {
@@ -27,7 +29,7 @@ namespace ExerciseApp
             
             else
             {
-                if (onboardingComplete)
+                if (App.OnboardingComplete)
                 {
                     await Navigation.PushAsync(new HomePage());
                 }
