@@ -5,7 +5,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-using Xamarin.Forms;
 using Android.Content;
 using Android.Preferences;
 
@@ -24,14 +23,14 @@ namespace ExerciseApp
 
         }
 
-        public App(string databaseLocation)
+        /*public App(string databaseLocation)
         {
             InitializeComponent();
 
             MainPage = new NavigationPage(new MainPage());
 
             DatabaseLocation = databaseLocation;
-        }
+        }*/
 
         protected override void OnStart()
         {

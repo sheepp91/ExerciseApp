@@ -5,7 +5,7 @@
              NavigationPage.HasNavigationBar="false">
     <ContentPage.Content>
 
-        <Grid>
+        <Grid Margin="0,0,0,0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
@@ -32,7 +32,7 @@
             <Image Grid.RowSpan="7" Source="overlay.png" Aspect="AspectFill"></Image>
             <Image Grid.Row="0" Source="highlightedinbox.png" Opacity="0.1" HeightRequest="25" WidthRequest="25" HorizontalOptions="End" Margin="10,10"></Image>
             <ImageButton Grid.Row="3" Source="onboarding10.png" HeightRequest="100" WidthRequest="200" BackgroundColor="#666666" VerticalOptions="Start" HorizontalOptions="Start" Margin="30,0,0,0"  Clicked="OnImageButtonClicked"></ImageButton>
-            <Image Grid.Row="5" VerticalOptions="End" Margin="0,-30" Source="toolbar.png" Aspect="AspectFill" HeightRequest="100" BackgroundColor="#666666" HorizontalOptions="FillAndExpand"></Image>
+            <Image Grid.Row="6" Margin="0,0" Source="toolbar.png" Aspect="AspectFill" HeightRequest="100" BackgroundColor="#666666" HorizontalOptions="FillAndExpand"></Image>
         </Grid>
 
         <!-- <Grid>

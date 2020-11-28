@@ -31,7 +31,7 @@
             <Image Grid.RowSpan="7" Source="overlay.png" Aspect="AspectFill"></Image>
             <ImageButton Grid.Row="0" Source="highlightedinbox.png" BackgroundColor="#666666" Clicked="OnImageButtonClicked" HeightRequest="25" WidthRequest="25" HorizontalOptions="End" Margin="10,10"></ImageButton>
             <Image Grid.Row="1" VerticalOptions="Start" Margin="0,-30,5,0" Source="messagingtip.png" Aspect="AspectFill" HeightRequest="40" WidthRequest="200" HorizontalOptions="End"></Image>
-            <ImageButton Grid.Row="3" Source="btn_skip.png" HeightRequest="40" WidthRequest="40" BackgroundColor="#666666" VerticalOptions="Center" Clicked="Skip"></ImageButton>
+            <!--<ImageButton Grid.Row="3" Source="btn_skip.png" HeightRequest="40" WidthRequest="40" BackgroundColor="#666666" VerticalOptions="Center" Clicked="Skip"></ImageButton>-->
             <Image Grid.Row="6" VerticalOptions="End" Aspect="AspectFill" HorizontalOptions="FillAndExpand" HeightRequest="80" Source="toolbar.png"></Image>
         </Grid>
 

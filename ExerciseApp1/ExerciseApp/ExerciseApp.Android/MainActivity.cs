@@ -22,11 +22,15 @@ namespace ExerciseApp.Droid
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
 
-            string dbName = "travel_db.sqlite";
+            /*string dbName = "travel_db.sqlite";
             string folderPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
-            string fullPath = Path.Combine(folderPath, dbName);
+            string fullPath = Path.Combine(folderPath, dbName);*/
 
-            LoadApplication(new App(fullPath));
+            LoadApplication(new App());
+
+            /* LoadApplication(new App(fullPath)); 
+             * Here is the constructor fullPath for when using SqLite
+             */ 
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {

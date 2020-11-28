@@ -19,13 +19,13 @@
                 </Grid>
                 <Grid>
                     <Grid.RowDefinitions>
+                        <RowDefinition Height="140">
+                        </RowDefinition>
                         <RowDefinition Height="130">
                         </RowDefinition>
-                        <RowDefinition Height="120">
+                        <RowDefinition Height="130">
                         </RowDefinition>
-                        <RowDefinition Height="100">
-                        </RowDefinition>
-                        <RowDefinition Height="*">
+                        <RowDefinition Height="20">
                         </RowDefinition>
                         <RowDefinition Height="100">
                         </RowDefinition>
@@ -50,8 +50,8 @@ Can You Run Continuously?
                     <Slider Grid.Row="1" WidthRequest="300"  Margin="0,30"  HorizontalOptions="CenterAndExpand" VerticalOptions="End" Minimum="0" Value="0" Maximum="30" ThumbColor="White" ValueChanged="OnSliderValueChanged"></Slider>
                     <Label Text="Can You Run 5km Continuously?" Margin="0,0,0,0" HorizontalOptions="Center" Grid.Row="2" FontFamily="Europa#700" FontSize="18" FontAttributes="Bold" TextColor="#FFFFFFFF"/>
                     <CheckBox Grid.Row="2" Margin="0,20,0,0" HorizontalOptions="Center" Color="White"></CheckBox>
-                    <Image Source="PagerDots2_2.png" Grid.Row="3" HorizontalOptions="Center"></Image>
-                    <ImageButton Source="btn_white" Grid.Row="4" Margin="0,0,0,0" VerticalOptions="Center" BackgroundColor="#5574F7" Clicked="OnImageButtonClicked" IsEnabled="True"></ImageButton>
+                    <Image Source="PagerDots2_2.png" Grid.Row="3" WidthRequest="20" HeightRequest="20" HorizontalOptions="Center"></Image>
+                    <ImageButton Source="btn_white" Grid.Row="4" WidthRequest="100" HeightRequest="100" Margin="0,0,0,0" BackgroundColor="#5574F7" Clicked="OnImageButtonClicked" IsEnabled="True"></ImageButton>
                 </Grid>
             </StackLayout>
         </StackLayout>

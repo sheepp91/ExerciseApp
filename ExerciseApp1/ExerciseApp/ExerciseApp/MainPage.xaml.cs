@@ -2,7 +2,6 @@
 using System;
 using System.ComponentModel;
 using Xamarin.Forms;
-using ExerciseApp.View;
 using Android.Preferences;
 using Android.Content;
 

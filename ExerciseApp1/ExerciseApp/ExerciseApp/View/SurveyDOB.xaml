@@ -5,7 +5,7 @@
              NavigationPage.HasNavigationBar="false">
     <ContentPage.Content>
         <StackLayout BackgroundColor="#5574F7">
-            <StackLayout>
+            
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="0.5*" />
@@ -30,7 +30,7 @@
                         <RowDefinition Height="100">
                         </RowDefinition>
                     </Grid.RowDefinitions>
-                <Label Grid.Row="1" HorizontalOptions="Center" Text="A Bit About You" FontFamily="Europa#700" FontSize="30" FontAttributes="Bold" TextColor="#FFFFFFFF" />
+                <Label Grid.Row="0" Grid.RowSpan="2" HorizontalOptions="Center" Text="A Bit About You" FontFamily="Europa#700" FontSize="30" FontAttributes="Bold" TextColor="#FFFFFFFF" />
                 <Line Grid.Row="1" Margin="0,30,0,0" X1="0" Y1="20" X2="290" Y2="20"
     StrokeLineCap="Round"
       Stroke="White"
@@ -41,9 +41,9 @@
                     <DatePicker x:Name="dob" Date="{Binding DateSelected}" Format="d" Margin="0,60" Grid.Row="2" FontFamily="Europa#700" FontSize="14" FontAttributes="Bold"  WidthRequest="300" TextColor="Black" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Background="White"></DatePicker>
                     <!--Need to make DatePicker functional. Sql Connection to save in database. Then formula for calculating age in years for Handicap function later. -->
                 <Image Source="PagerDots1_2.png" Grid.Row="3" HorizontalOptions="Center"></Image>
-                    <ImageButton Source="btn_white" Grid.Row="4" Margin="0,-15,0,0" BackgroundColor="#5574F7" Clicked="OnImageButtonClicked" IsEnabled="True"></ImageButton>
+                    <ImageButton Source="btn_white" HeightRequest="100" WidthRequest="100" Grid.Row="4" VerticalOptions="End" Margin="0,-15,0,0" BackgroundColor="#5574F7" Clicked="OnImageButtonClicked" IsEnabled="True"></ImageButton>
                 </Grid>
-            </StackLayout>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
