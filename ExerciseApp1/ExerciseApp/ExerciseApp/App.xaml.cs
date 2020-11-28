@@ -58,7 +58,7 @@ namespace ExerciseApp
         public static void SaveString(string stringToSave, string name)
         {
             ISharedPreferencesEditor editor = savedVars.Edit();
-            editor.PutString("name", stringToSave);
+            editor.PutString(name, stringToSave);
         }
 
         public static string GetSavedString(string name)
