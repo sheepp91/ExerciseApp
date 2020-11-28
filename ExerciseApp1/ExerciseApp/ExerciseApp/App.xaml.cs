@@ -1,10 +1,4 @@
-﻿using ExerciseApp.View;
-using Xamarin.Forms;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+﻿using Xamarin.Forms;
 using Android.Content;
 using Android.Preferences;
 
@@ -52,12 +46,12 @@ namespace ExerciseApp
         public static void SaveBool(bool boolToSave, string name)
         {
             ISharedPreferencesEditor editor = savedVars.Edit();
-            editor.PutBoolean("name", boolToSave);
+            editor.PutBoolean(name, boolToSave);
         }
 
         public static bool GetSavedBool(string name)
         {
-            return savedVars.GetBoolean("name", false);
+            return savedVars.GetBoolean(name, false);
         }
 
         //Save strings
@@ -69,31 +63,31 @@ namespace ExerciseApp
 
         public static string GetSavedString(string name)
         {
-            return savedVars.GetString("name", "");
+            return savedVars.GetString(name, "");
         }
 
         //Save ints
         public static void SaveInt(int intToSave, string name)
         {
             ISharedPreferencesEditor editor = savedVars.Edit();
-            editor.PutInt("name", intToSave);
+            editor.PutInt(name, intToSave);
         }
 
         public static int GetSavedInt(string name)
         {
-            return savedVars.GetInt("name", -1);
+            return savedVars.GetInt(name, -1);
         }
 
         //Save float
         public static void SaveFloat(float floatToSave, string name)
         {
             ISharedPreferencesEditor editor = savedVars.Edit();
-            editor.PutFloat("name", floatToSave);
+            editor.PutFloat(name, floatToSave);
         }
 
         public static float GetSavedFloat(string name)
         {
-            return savedVars.GetFloat("name", -1.0f);
+            return savedVars.GetFloat(name, -1.0f);
         }
     }
 }

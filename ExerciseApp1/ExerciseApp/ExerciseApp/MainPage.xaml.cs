@@ -2,8 +2,6 @@
 using System;
 using System.ComponentModel;
 using Xamarin.Forms;
-using Android.Preferences;
-using Android.Content;
 
 namespace ExerciseApp
 {
