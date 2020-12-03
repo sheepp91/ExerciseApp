@@ -72,8 +72,19 @@
                             <ColumnDefinition Width="auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
 
-                        <Image Source="josh.png" Grid.Row="0" Grid.Column="0" HeightRequest="25" WidthRequest="25"></Image>
-                        <Label Grid.Row="0" Grid.Column="1" Text="Sheepp91 Achieved &#10;Level 5 at General Fitness:&#10;Wearing red and running twice as fast" FontFamily="Europa#700" FontSize="15" FontAttributes="Bold" TextColor="#FF334856" />
+
+                        <ListView x:Name="postListView" Grid.Row="0" Grid.Column="1">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <TextCell Text="{Binding Experience}"/>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+
+
+                        <!--<Image x:Name="userImage" Source="josh.png" Grid.Row="0" Grid.Column="0" HeightRequest="25" WidthRequest="25"></Image>
+
+                        <Label x:Name="userPost" Grid.Row="0" Grid.Column="1" Text="Sheepp91 Achieved &#10;Level 5 at General Fitness:&#10;Wearing red and running twice as fast" FontFamily="Europa#700" FontSize="15" FontAttributes="Bold" TextColor="#FF334856" /> 
                     <StackLayout Orientation="Horizontal" Grid.Row="1" Grid.ColumnSpan="2">
                     <Image Source="icn_like.png" ></Image>
                         <Label Text="LIKE" FontFamily="Europa#700" FontSize="12" FontAttributes="Bold" TextColor="#FF334856" />
@@ -104,7 +115,7 @@
 
                             <Image Source="messaging.png"></Image>
                             <Label Text="COMMENT" FontFamily="Europa#700" FontSize="12" FontAttributes="Bold" TextColor="#FF334856" />
-                        </StackLayout>
+                        </StackLayout> -->
                     </Grid>
 
                 </Frame>

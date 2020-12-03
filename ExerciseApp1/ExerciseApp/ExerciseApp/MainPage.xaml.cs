@@ -2,11 +2,9 @@
 using System;
 using System.ComponentModel;
 using Xamarin.Forms;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using ExerciseApp.Model;
-
 
 namespace ExerciseApp
 {
@@ -18,6 +16,8 @@ namespace ExerciseApp
         public MainPage()
         {
             InitializeComponent();
+
+            var assembly = typeof(MainPage);
         }
         public async void NavigateButton_OnClicked(object sender, EventArgs e)
         {

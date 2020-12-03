@@ -1,16 +1,22 @@
-﻿namespace ExerciseApp.Model
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ExerciseApp.Model
 {
-    class User
+    public class User
     {
         public string Id { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
 
-        public User() { }
-        public User(string username, string password)
-        {
-            this.Email = username;
-            this.Password = password;
-        }
+        //public User() { }
+        //public User(string username, string password)
+        //{
+          //  this.Email = username;
+            //this.Password = password;
+        //}
     }
 }
