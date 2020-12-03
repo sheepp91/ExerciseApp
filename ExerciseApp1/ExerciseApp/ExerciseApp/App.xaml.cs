@@ -1,14 +1,25 @@
 ﻿using Xamarin.Forms;
 using Android.Content;
 using Android.Preferences;
+using Microsoft.WindowsAzure.MobileServices;
+using System.Linq;
+using System.Text;
+using ExerciseApp.Model;
 
 namespace ExerciseApp
 {
     public partial class App : Application
     {
         public static bool OnboardingComplete = false;
+
         static ISharedPreferences savedVars;
+
         public static string DatabaseLocation = string.Empty;
+
+        public static MobileServiceClient MobileService = new MobileServiceClient("https://fittree.azurewebsites.net");
+
+        public static User user = new User();
+
         public App()
         {
             InitializeComponent();
@@ -17,14 +28,14 @@ namespace ExerciseApp
 
         }
 
-        /*public App(string databaseLocation)
+        public App(string databaseLocation)
         {
             InitializeComponent();
-
+            Device.SetFlags(new[] { "Shapes_Experimental", "MediaElement_Experimental", "RadioButton_Experimental" });
             MainPage = new NavigationPage(new MainPage());
 
             DatabaseLocation = databaseLocation;
-        }*/
+        }
 
         protected override void OnStart()
         {

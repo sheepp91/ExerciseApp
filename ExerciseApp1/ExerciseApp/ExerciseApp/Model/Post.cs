@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 using SQLite;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace ExerciseApp.Model
 {
@@ -12,5 +14,12 @@ namespace ExerciseApp.Model
 
         [MaxLength(250)]
         public string Experience { get; set; }
+
+        public string UserId { get; set; }
+
     }
 }
+
+
+
+

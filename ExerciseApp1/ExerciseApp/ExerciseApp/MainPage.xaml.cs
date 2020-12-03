@@ -2,6 +2,11 @@
 using System;
 using System.ComponentModel;
 using Xamarin.Forms;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using ExerciseApp.Model;
+
 
 namespace ExerciseApp
 {
@@ -16,6 +21,7 @@ namespace ExerciseApp
         }
         public async void NavigateButton_OnClicked(object sender, EventArgs e)
         {
+
             bool IsUsernameEmpty = string.IsNullOrEmpty(usernameEntry.Text);
             bool IsPasswordEmpty = string.IsNullOrEmpty(passwordEntry.Text);
 
@@ -26,13 +32,25 @@ namespace ExerciseApp
             
             else
             {
-                if (App.OnboardingComplete)
+                var user = (await App.MobileService.GetTable<User>().Where(u => u.Email == usernameEntry.Text).ToListAsync()).FirstOrDefault();
+
+                if (App.OnboardingComplete && user != null)
                 {
-                    await Navigation.PushAsync(new HomePage());
+                    App.user = user;
+                    if (user.Password == passwordEntry.Text)
+                        await Navigation.PushAsync(new HomePage());
+                    else
+                        await DisplayAlert("Error", "Email or password are incorrect", "Ok");
+
                 }
-                else
+                else if (user != null)
                 {
-                    await Navigation.PushAsync(new Onboarding1());
+                    if (user.Password == passwordEntry.Text)
+                        await Navigation.PushAsync(new Onboarding1());
+                }
+                else 
+                {
+                    await DisplayAlert("Error", "Email or password are incorrect", "Ok");
                 }
             }
 

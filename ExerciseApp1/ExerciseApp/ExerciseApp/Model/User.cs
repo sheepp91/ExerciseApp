@@ -2,15 +2,15 @@
 {
     class User
     {
-        public int m_id { get; set; }
-        public string m_username { get; set; }
-        public string m_password { get; set; }
+        public string Id { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
 
         public User() { }
         public User(string username, string password)
         {
-            this.m_username = username;
-            this.m_password = password;
+            this.Email = username;
+            this.Password = password;
         }
     }
 }

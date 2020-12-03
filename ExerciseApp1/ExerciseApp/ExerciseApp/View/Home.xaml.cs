@@ -34,7 +34,7 @@ namespace ExerciseApp.View
 
         private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Post());
+            await Navigation.PushAsync(new NewPostPage());
         }
     }
 }
