@@ -4,6 +4,12 @@
              x:Class="ExerciseApp.View.Home"
              NavigationPage.HasNavigationBar="false"
              BackgroundColor="#FFF0F3F4">
+    
+    
+    
+    
+    
+   
     <ContentPage.Content>
         <!--Tab Design-->
         <StackLayout>
@@ -61,6 +67,51 @@
         <StackLayout x:Name="stkTab1">
                 
                 <Label Text="Your Updates" TextColor="#334856" FontFamily="Europa#700" FontSize="14" FontAttributes="Bold" Margin="30,10" Padding="0"></Label>
+                <ListView>
+                    <ListView.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>test</x:String>
+                            <x:String>monodroid</x:String>
+                            <x:String>monotouch</x:String>
+                            <x:String>monorail</x:String>
+                            <x:String>monodevelop</x:String>
+                            <x:String>monotone</x:String>
+                            <x:String>monopoly</x:String>
+                            <x:String>monomodal</x:String>
+                            <x:String>mononucleosis</x:String>
+                        </x:Array>
+                    </ListView.ItemsSource>
+                </ListView>
+
+                <ListView x:Name="postListView">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid Padding="10"  BackgroundColor="White">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto" />
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto" />
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Column="1" Grid.Row="0"
+                           Text="{Binding Experience}"  
+                           FontAttributes="Bold"
+                           TextColor="DarkSlateGray"  FontFamily="SegoeUIEmoji#400" FontSize="14" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            
+            <!--<ListView x:Name="postListView">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding Experience}"/>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>-->
                 <Frame HeightRequest="120" HasShadow="true" BackgroundColor="#FFFFFFFF" CornerRadius="15" Margin="20,0,20,5">
                     <Grid>
                         <Grid.RowDefinitions>
@@ -73,13 +124,7 @@
                         </Grid.ColumnDefinitions>
 
 
-                        <ListView x:Name="postListView" Grid.Row="0" Grid.Column="1">
-                            <ListView.ItemTemplate>
-                                <DataTemplate>
-                                    <TextCell Text="{Binding Experience}"/>
-                                </DataTemplate>
-                            </ListView.ItemTemplate>
-                        </ListView>
+
 
 
                         <!--<Image x:Name="userImage" Source="josh.png" Grid.Row="0" Grid.Column="0" HeightRequest="25" WidthRequest="25"></Image>
@@ -131,4 +176,6 @@
             
         </StackLayout>
     </ContentPage.Content>
+    
+    
 </ContentPage>

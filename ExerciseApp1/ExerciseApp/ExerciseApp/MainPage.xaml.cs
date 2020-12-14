@@ -5,6 +5,9 @@ using Xamarin.Forms;
 using System.Linq;
 using System.Text;
 using ExerciseApp.Model;
+using SQLite;
+using Microsoft.WindowsAzure.MobileServices;
+
 
 namespace ExerciseApp
 {
@@ -22,7 +25,7 @@ namespace ExerciseApp
         public async void NavigateButton_OnClicked(object sender, EventArgs e)
         {
 
-            bool IsUsernameEmpty = string.IsNullOrEmpty(usernameEntry.Text);
+            bool IsUsernameEmpty = string.IsNullOrEmpty(emailEntry.Text);
             bool IsPasswordEmpty = string.IsNullOrEmpty(passwordEntry.Text);
 
             if(IsUsernameEmpty || IsPasswordEmpty )
@@ -32,7 +35,7 @@ namespace ExerciseApp
             
             else
             {
-                var user = (await App.MobileService.GetTable<User>().Where(u => u.Email == usernameEntry.Text).ToListAsync()).FirstOrDefault();
+                var user = (await App.MobileService.GetTable<Users>().Where(u => u.Email == emailEntry.Text).ToListAsync()).FirstOrDefault();
 
                 if (App.OnboardingComplete && user != null)
                 {
@@ -45,8 +48,9 @@ namespace ExerciseApp
                 }
                 else if (user != null)
                 {
+                    App.user = user;
                     if (user.Password == passwordEntry.Text)
-                        await Navigation.PushAsync(new Onboarding1());
+                        await Navigation.PushAsync(new HomePage());
                 }
                 else 
                 {

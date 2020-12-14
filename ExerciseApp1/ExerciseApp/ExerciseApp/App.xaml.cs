@@ -18,12 +18,12 @@ namespace ExerciseApp
 
         public static MobileServiceClient MobileService = new MobileServiceClient("https://fittree.azurewebsites.net");
 
-        public static User user = new User();
+        public static Users user = new Users();
 
         public App()
         {
             InitializeComponent();
-            Device.SetFlags(new[] { "Shapes_Experimental", "MediaElement_Experimental", "RadioButton_Experimental" });
+           Device.SetFlags(new[] { "Shapes_Experimental", "MediaElement_Experimental", "RadioButton_Experimental" });
             MainPage = new NavigationPage(new MainPage());
 
         }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ExerciseApp.Model
 {
-    public class User
+    public class Users
     {
         public string Id { get; set; }
         public string Email { get; set; }

@@ -27,18 +27,20 @@ namespace ExerciseApp.View
             if (passwordEntry.Text == confirmPasswordEntry.Text)
             {
                 // We can register the user
-                User user = new User()
+                Users user = new Users()
                 {
                     Email = emailEntry.Text,
                     Password = passwordEntry.Text
                 };
 
-                await App.MobileService.GetTable<User>().InsertAsync(user);
+                await App.MobileService.GetTable<Users>().InsertAsync(user);
+                await DisplayAlert("Success", "New user created", "Ok");
+
 
             }
             else
             {
-                DisplayAlert("Error", "Passwords don't match", "Ok");
+                await DisplayAlert("Error", "Passwords don't match", "Ok");
             }
         }
     }

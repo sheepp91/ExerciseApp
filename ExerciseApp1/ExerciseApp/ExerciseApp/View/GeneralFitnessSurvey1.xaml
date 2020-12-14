@@ -12,16 +12,16 @@
                         <ColumnDefinition Width="0.5*" />
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="100" />
+                        <RowDefinition Height="auto" />
                     </Grid.RowDefinitions>
                     <ImageButton Source="icn_back.png" Grid.Column="0" Margin="30" HeightRequest="20" WidthRequest="20" BackgroundColor="#5574F7"
                                 Clicked="Back" HorizontalOptions="Start" VerticalOptions="Center"></ImageButton>
                 </Grid>
                 <Grid HorizontalOptions="Fill" VerticalOptions="Fill">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="100">
+                        <RowDefinition Height="50">
                         </RowDefinition>
-                        <RowDefinition Height="100">
+                        <RowDefinition Height="*">
                         </RowDefinition>
                         <RowDefinition Height="100">
                         </RowDefinition>

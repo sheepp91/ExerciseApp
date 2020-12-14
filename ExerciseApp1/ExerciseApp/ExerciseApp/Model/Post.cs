@@ -10,13 +10,17 @@ namespace ExerciseApp.Model
     public class Post
     {
         [PrimaryKey, AutoIncrement]
-        public int Id { get; set; }
+        public string Id { get; set; }
 
         [MaxLength(250)]
         public string Experience { get; set; }
 
         public string UserId { get; set; }
 
+        public static async void Insert(Post post)
+        {
+            await App.MobileService.GetTable<Post>().InsertAsync(post);
+        }
     }
 }
 

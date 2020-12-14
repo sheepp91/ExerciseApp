@@ -10,6 +10,7 @@ using Xamarin.Forms.Xaml;
 using SQLite;
 using ExerciseApp.Model;
 
+
 namespace ExerciseApp.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -21,7 +22,7 @@ namespace ExerciseApp.View
         }
         private async void Back(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Home());
+            await Navigation.PushAsync(new HistoryPage());
         }
 
         private async void ToolbarItem_Clicked(object sender, EventArgs e)
@@ -41,13 +42,14 @@ namespace ExerciseApp.View
                     int rows = conn.Insert(post);
 
                     if (rows > 0)
-                        DisplayAlert("Success", "Experience succesfully inserter", "Ok");
+                        DisplayAlert("Success", "Experience succesfully inserted", "Ok");
                     else
                         DisplayAlert("Failure", "Experience failed to be inserted", "Ok");
                 }*/
 
-                await App.MobileService.GetTable<Post>().InsertAsync(post);
-                await DisplayAlert("Success", "Experience succesfully inserter", "Ok");
+                Post.Insert(post);
+                //await App.MobileService.GetTable<Post>().InsertAsync(post);
+                await DisplayAlert("Success", "Experience succesfully inserted", "Ok");
 
             }
             catch (NullReferenceException nre)

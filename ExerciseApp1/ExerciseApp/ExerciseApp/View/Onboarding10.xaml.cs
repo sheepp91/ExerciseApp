@@ -16,7 +16,7 @@ namespace ExerciseApp.View
         {
             App.OnboardingComplete = true;
             App.SaveBool(App.OnboardingComplete, "OnboardingComplete");
-            await Navigation.PushAsync(new SkillTreePage());
+            await Navigation.PushAsync(new HomePage());
         }
 
         private async void Skip(object sender, EventArgs e)
