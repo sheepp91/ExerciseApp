@@ -7,7 +7,7 @@ using System.Text;
 using ExerciseApp.Model;
 using SQLite;
 using Microsoft.WindowsAzure.MobileServices;
-
+using ExerciseApp.ViewModel;
 
 namespace ExerciseApp
 {
@@ -16,16 +16,33 @@ namespace ExerciseApp
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
+        MainVM viewModel;
         public MainPage()
         {
             InitializeComponent();
 
             var assembly = typeof(MainPage);
+
+            viewModel = new MainVM();
+            BindingContext = viewModel;
         }
+
         public async void NavigateButton_OnClicked(object sender, EventArgs e)
         {
 
-            bool IsUsernameEmpty = string.IsNullOrEmpty(emailEntry.Text);
+            bool canLogin = await User.Login(emailEntry.Text, passwordEntry.Text);
+
+            if (canLogin)
+                await Navigation.PushAsync(new HomePage());
+
+            else if (canLogin && App.OnboardingComplete)
+                await Navigation.PushAsync(new HomePage());
+            
+
+            else
+                await DisplayAlert("Error", "Try again", "Ok");
+
+           /* bool IsUsernameEmpty = string.IsNullOrEmpty(emailEntry.Text);
             bool IsPasswordEmpty = string.IsNullOrEmpty(passwordEntry.Text);
 
             if(IsUsernameEmpty || IsPasswordEmpty )
@@ -56,7 +73,7 @@ namespace ExerciseApp
                 {
                     await DisplayAlert("Error", "Email or password are incorrect", "Ok");
                 }
-            }
+            } */
 
         }
         private async void RegisterPage(object sender, EventArgs e)

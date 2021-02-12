@@ -13,9 +13,12 @@ namespace ExerciseApp.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Register : ContentPage
     {
+        User user;
         public Register()
         {
             InitializeComponent();
+            user = new User();
+            containerGrid.BindingContext = user;
         }
         private async void Back(object sender, EventArgs e)
         {
@@ -27,14 +30,18 @@ namespace ExerciseApp.View
             if (passwordEntry.Text == confirmPasswordEntry.Text)
             {
                 // We can register the user
-                Users user = new Users()
+
+                User.Register(user);
+
+                /*Users user = new Users()
                 {
                     Email = emailEntry.Text,
                     Password = passwordEntry.Text
                 };
 
-                await App.MobileService.GetTable<Users>().InsertAsync(user);
-                await DisplayAlert("Success", "New user created", "Ok");
+                Users.Register(user);
+                //await App.MobileService.GetTable<Users>().InsertAsync(user);
+                await DisplayAlert("Success", "New user created", "Ok");*/
 
 
             }

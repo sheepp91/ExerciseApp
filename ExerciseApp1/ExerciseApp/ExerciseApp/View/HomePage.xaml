@@ -11,6 +11,17 @@
     x:Class="ExerciseApp.View.HomePage"
     NavigationPage.HasNavigationBar="false">
 
+
+    <TabbedPage.ToolbarItems>
+        <ToolbarItem x:Name="toolbarItem"
+                     Text="Add"
+                     IconImageSource="icn_inbox_dark.png"
+                     Command="{Binding NavCommand}"/>
+    </TabbedPage.ToolbarItems>
+    
+    
+    
+    
     <NavigationPage Icon="home.png" Title="Home" BarTextColor="Gray">
         <x:Arguments>
             <local:SkillTreePage/>

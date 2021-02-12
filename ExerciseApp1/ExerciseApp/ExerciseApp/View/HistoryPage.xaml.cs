@@ -7,30 +7,45 @@ using SQLite;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using ExerciseApp.Model;
+using ExerciseApp.ViewModel;
+using ExerciseApp.Helpers;
 
 namespace ExerciseApp
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class HistoryPage : ContentPage
-	{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class HistoryPage : ContentPage
+    {
+        HistoryVM viewModel;
         public HistoryPage()
         {
             InitializeComponent();
+
+            viewModel = new HistoryVM();
+            BindingContext = viewModel;
         }
 
         protected override async void OnAppearing()
         {
             base.OnAppearing();
 
-            /*using (SQLiteConnection conn = new SQLiteConnection(App.DatabaseLocation))
-            {
-                conn.CreateTable<Post>();
-                var posts = conn.Table<Post>().ToList();
-                postListView.ItemsSource = posts;
-            }*/
+            viewModel.UpdatePosts();
 
-            var posts = await App.MobileService.GetTable<Post>().Where(p => p.UserId == App.user.Id).ToListAsync();
-            postListView.ItemsSource = posts;
+            await AzureAppServiceHelper.SyncAsync();
+        }
+
+        private void MenuItem_Clicked(object sender, EventArgs e)
+        {
+            var post = (Post)((MenuItem)sender).CommandParameter;
+            viewModel.DeletePost(post);
+
+            viewModel.UpdatePosts();
+        }
+
+        private async void postListView_Refreshing(object sender, EventArgs e)
+        {
+            await viewModel.UpdatePosts();
+            await AzureAppServiceHelper.SyncAsync();
+            postListView.IsRefreshing = false;
         }
     }
 }

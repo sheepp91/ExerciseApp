@@ -5,6 +5,9 @@ using Microsoft.WindowsAzure.MobileServices;
 using System.Linq;
 using System.Text;
 using ExerciseApp.Model;
+using Microsoft.WindowsAzure.MobileServices.Sync;
+using Microsoft.WindowsAzure.MobileServices.SQLiteStore;
+
 
 namespace ExerciseApp
 {
@@ -16,9 +19,14 @@ namespace ExerciseApp
 
         public static string DatabaseLocation = string.Empty;
 
-        public static MobileServiceClient MobileService = new MobileServiceClient("https://fittree.azurewebsites.net");
+        public static MobileServiceClient MobileService = 
+            new MobileServiceClient(
+                "https://fittree.azurewebsites.net"
+        );
 
-        public static Users user = new Users();
+        public static IMobileServiceSyncTable<Post> postsTable;
+
+        public static User user = new User();
 
         public App()
         {
@@ -35,6 +43,13 @@ namespace ExerciseApp
             MainPage = new NavigationPage(new MainPage());
 
             DatabaseLocation = databaseLocation;
+
+            var store = new MobileServiceSQLiteStore(databaseLocation);
+            store.DefineTable<Post>();
+
+            MobileService.SyncContext.InitializeAsync(store);
+
+            postsTable = MobileService.GetSyncTable<Post>();
         }
 
         protected override void OnStart()

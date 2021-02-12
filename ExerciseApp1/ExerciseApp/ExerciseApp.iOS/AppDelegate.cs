@@ -5,6 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 using System.IO;
+using Microsoft.WindowsAzure.MobileServices;
 
 
 namespace ExerciseApp.iOS
@@ -24,6 +25,7 @@ namespace ExerciseApp.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            global::Xamarin.Forms.Forms.SetFlags("FastRenderers_Experimental");
             global::Xamarin.Forms.Forms.Init();
 
             string dbName = "travel_db.sqlite";

@@ -17,7 +17,11 @@
                         <TapGestureRecognizer Tapped="Back" NumberOfTapsRequired="1"></TapGestureRecognizer>
                     </Image.GestureRecognizers>
                 </Image>
-                <Button Text="Submit" Clicked="ToolbarItem_Clicked" BackgroundColor="White" HorizontalOptions="End" FontFamily="Europa#700" FontSize="16" FontAttributes="Bold" TextColor="#FF324755"></Button>
+                <Button Text="Submit"
+                        Command="{Binding PostCommand}"
+                        CommandParameter="{Binding Post}" 
+                        BackgroundColor="White"
+                        HorizontalOptions="End" FontFamily="Europa#700" FontSize="16" FontAttributes="Bold" TextColor="#FF324755"></Button>
             </Grid>
 
             <Grid BackgroundColor="White">
@@ -27,12 +31,12 @@
                 <Image Grid.Row="0" Source="Josh.png" HorizontalOptions="Start" Margin="30" VerticalOptions="Center" HeightRequest="98" WidthRequest="98"></Image>
                 <Label Text="Sheepp91" FontFamily="Europa#700" FontSize="16" FontAttributes="Bold" TextColor="#FF324755" HorizontalOptions="Center" VerticalOptions="Center"></Label>
             </Grid>
-            <StackLayout>
+            <StackLayout x:Name="containerStackLayout">
                 <Frame Margin="20,20,20,10" HeightRequest="50" BackgroundColor="#FFFFFFFF">
                     <Entry Placeholder="Posting To: My Feed" VerticalOptions="Start" ></Entry>
                 </Frame>
                 <Frame Margin="20,10,20,20" HeightRequest="50" BackgroundColor="#FFFFFFFF">
-                    <Entry x:Name="experienceEntry"  Placeholder="Write Message Here" VerticalOptions="Start" ></Entry>
+                    <Entry x:Name="experienceEntry" Text="{Binding Experience, Mode=TwoWay}" Placeholder="Write Message Here" VerticalOptions="Start" ></Entry>
                 </Frame>
             </StackLayout>
         </StackLayout>
