@@ -46,7 +46,8 @@ namespace ExerciseApp.View
             }
         }
 
-        private int CalculateAge(DateTime birthDay)
+        //change this to public
+        public static int CalculateAge(DateTime birthDay)
         {
             int years = DateTime.Now.Year - birthDay.Year;
 

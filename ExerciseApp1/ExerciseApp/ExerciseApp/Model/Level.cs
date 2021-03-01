@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using ExerciseApp.View;
 
 namespace ExerciseApp.Model
 {
@@ -18,17 +19,9 @@ namespace ExerciseApp.Model
         //modifier for required time for each level
         public double expMod = 0.95f;
 
-        //age, needs to be adjusted so it is deducted from date of birth
-
-        // Save today's date.
-       // var today = DateTime.Today;
-
-        // Calculate the age.
-        //var age = today.Year - birthdate.Year;
-
-// Go back to the year in which the person was born in case of a leap year
-//if (birthdate.Date > today.AddYears(-age)) age--;
+        //PLACEHOLDER need to pull 'years' fromm SurveyDOB.xaml.cs
         public int age = 30;
+
 
 
 
@@ -49,9 +42,13 @@ namespace ExerciseApp.Model
         }
 
         //method for applying handicap which factors in age 
-        static void Handicap(int age, double runningTime)
+        static void Handicap(int years, double runningTime)
         {
-            if (age > 30)
+
+
+
+
+            if (years > 30)
             {
                 runningTime = runningTime * 0.95;
             }
